@@ -6,7 +6,7 @@ import logo2 from "../../assets/Img/Home/Logo/02-AFFORD.svg";
 import logo3 from "../../assets/Img/Home/Logo/03-COMMUNITY.svg";
 import ReviewSlider from "../../Components/ReviewSlider/ReviewSlider";
 import bg3 from "../../assets/Img/Home/03-BG.png";
-import WhyCard from "../../Components/WhyCard/WHyCard";
+import WhyCard from "../../Components/WhyCard/WhyCard";
 import Slider from "../../Components/Home-Slider/Slider";
 
 const Home = () => {

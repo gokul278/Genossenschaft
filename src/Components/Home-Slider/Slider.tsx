@@ -16,11 +16,6 @@ export default function Slider() {
       autoplay: 3500,
       animationDuration: 700,
       gap: 24,
-      classNames: {
-        nav: {
-          active: "[&>*]:bg-wuiSlate-700",
-        },
-      },
       breakpoints: {
         1024: {
           perView: 2,
@@ -30,7 +25,7 @@ export default function Slider() {
         },
       },
     }).mount();
-
+  
     return () => {
       slider.destroy();
     };
@@ -86,9 +81,7 @@ export default function Slider() {
                 >
                   <div className="w-[100%] h-[250px] flex items-end relative group">
                     <div className="w-[100%] h-[250px] absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent hover:opacity-0 opacity-70 transition-opacity duration-300"></div>
-                    <div
-                      className="w-[100%] text-[#fff] h-[40px] flex justify-center items-center z-10"
-                    >
+                    <div className="w-[100%] text-[#fff] h-[40px] flex justify-center items-center z-10">
                       <div className="w-[90%] flex justify-between">
                         <div className="text-[18px] font-semibold">
                           € {element.price}
