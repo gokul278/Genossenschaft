@@ -88,7 +88,6 @@ export default function Slider() {
                     <div className="w-[100%] h-[250px] absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent hover:opacity-0 opacity-70 transition-opacity duration-300"></div>
                     <div
                       className="w-[100%] text-[#fff] h-[40px] flex justify-center items-center z-10"
-                      align="center"
                     >
                       <div className="w-[90%] flex justify-between">
                         <div className="text-[18px] font-semibold">
@@ -99,11 +98,10 @@ export default function Slider() {
                     </div>
                   </div>
                 </div>
-                <div className="w-[320px] mt-4" align="center">
+                <div className="w-[320px] mt-4">
                   <h1
                     className="w-[320px] font-plus font-semibold overflow-hidden whitespace-nowrap"
                     style={{ textOverflow: "ellipsis" }}
-                    align="start"
                   >
                     {element.name}
                   </h1>
@@ -112,7 +110,7 @@ export default function Slider() {
                     style={{ textOverflow: "ellipsis" }}
                   >
                     <div className="flex justify-between items-center">
-                      <div align="start">
+                      <div>
                         <div className="flex">
                           <img
                             className="w-[22px] h-[22px]"
