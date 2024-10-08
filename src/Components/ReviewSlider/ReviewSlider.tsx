@@ -13,8 +13,25 @@ export default function ReviewSlider() {
       animationDuration: 700,
       gap: 0,
       classes: {
+        swipeable: "glide__swipeable",     // Class for swipeable slides
+        dragging: "glide__dragging",       // Class for dragging state
+        direction: {
+          ltr: "glide__direction--ltr",    // Class for left-to-right direction
+          rtl: "glide__direction--rtl",    // Class for right-to-left direction
+        },
+        type: {
+          slider: "glide__type--slider",    // Class for slider type
+          carousel: "glide__type--carousel",// Class for carousel type
+        },
+        slide: {
+          active: "glide__slide--active",   // Class for active slide
+          clone: "glide__slide--clone",     // Class for cloned slide
+        },
+        arrow: {
+          disabled: "glide__arrow--disabled", // Class for disabled arrows
+        },
         nav: {
-          active: "[&>*]:bg-[#000]",
+          active: "[&>*]:bg-[#000]",         // Custom active nav class
         },
       },
     }).mount();
@@ -40,7 +57,7 @@ export default function ReviewSlider() {
                 <div className="overflow-hidden ">
                   <div className="relative p-6">
                     <figure className="relative z-10">
-                      <blockquote className="p-6 text-[15px] leading-loose lg:text-[18px] font-mont">
+                      <blockquote className="p-6 text- leading-loose lg:text-[18px] font-mont">
                         <p>
                           "Here, living in Zurich has been a totally new
                           experience. The community spirit here is incredible.
@@ -170,7 +187,7 @@ export default function ReviewSlider() {
                 <div className="overflow-hidden">
                   <div className="relative p-6">
                     <figure className="relative z-10">
-                      <blockquote className="p-6 text-[15px] leading-loose lg:text-[18px] font-mont">
+                      <blockquote className="p-6 text- leading-loose lg:text-[18px] font-mont">
                         <p>
                           "It is very fulfilling to live in GASI. The sense of
                           community and mutual support is unmatched."
@@ -298,7 +315,7 @@ export default function ReviewSlider() {
                 <div className="overflow-hidden">
                   <div className="relative p-6">
                     <figure className="relative z-10">
-                      <blockquote className="p-6 text-[15px] leading-loose lg:text-[18px] font-mont">
+                      <blockquote className="p-6 text- leading-loose lg:text-[18px] font-mont">
                         <p>
                           "I like the fact that GASI has a focus on
                           sustainability. It's wonderful to be able to live in
@@ -428,7 +445,7 @@ export default function ReviewSlider() {
                 <div className="overflow-hidden">
                   <div className="relative p-6">
                     <figure className="relative z-10">
-                      <blockquote className="p-6 text-[15px] leading-loose lg:text-[18px] font-mont">
+                      <blockquote className="p-6 text- leading-loose lg:text-[18px] font-mont">
                         <p>
                           "Being part of a cooperative housing model has really
                           given me a sense of ownership. I love to contribute to
