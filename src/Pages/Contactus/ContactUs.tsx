@@ -98,7 +98,9 @@ const ContactUs = () => {
       <div className="w-[95%] flex justify-center items-center">
         <div className="w-[90%] my-5 flex flex-col lg:flex-row justify-between gap-y-10">
           <div className="w-[100%] lg:w-[49%]">
-            <h1 className="text-[40px] font-mont font-bold mb-10">Contact Form</h1>
+            <h1 className="text-[40px] font-mont font-bold mb-10">
+              Contact Form
+            </h1>
             <div>
               <TextInput id="name" type="text" name="name" label="Name" />
             </div>
@@ -140,13 +142,25 @@ const ContactUs = () => {
           </div>
 
           <div className="w-[100%] lg:w-[48%]">
-            <h1 className="text-[40px] font-mont font-bold mb-10">Our Location</h1>
+            {/* <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.684892936333!2d78.14989567452514!3d11.645788388560824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babef6bdbbc3f7d%3A0x404c804a4826efdf!2sZAdroit%20IT%20Solutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1728453895619!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe> */}
+            <h1 className="text-[40px] font-mont font-bold mb-10">
+              Our Location
+            </h1>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.684892936333!2d78.14989567452514!3d11.645788388560824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babef6bdbbc3f7d%3A0x404c804a4826efdf!2sZAdroit%20IT%20Solutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1728453895619!5m2!1sen!2sin"
               width="100%"
               className="h-[300px] lg:h-[85%]"
-              // height="90%"
+              allowFullScreen // instead of allowfullscreen
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade" // instead of referrerpolicy
             ></iframe>
           </div>
         </div>
