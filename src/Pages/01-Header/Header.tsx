@@ -27,6 +27,7 @@ export default function Header() {
               <div
                 className="text-[18px] cursor-pointer font-mont mt-2 font-semibold underline-animation"
                 onClick={() => {
+                  setMenuStatus(false);
                   navigate("/");
                 }}
               >
@@ -59,7 +60,8 @@ export default function Header() {
               <div
                 className="text-[18px] cursor-pointer font-mont mt-2 font-semibold underline-animation"
                 onClick={() => {
-                  navigate("/");
+                  setMenuStatus(false);
+                  navigate("/contact");
                 }}
               >
                 Contact Us
@@ -165,6 +167,7 @@ export default function Header() {
               <div
                 className="text-[18px] cursor-pointer font-mont py-5 font-semibold"
                 onClick={() => {
+                  setMenuStatus(false);
                   navigate("/");
                 }}
               >
@@ -197,7 +200,8 @@ export default function Header() {
               <div
                 className="text-[18px] cursor-pointer font-mont py-5 font-semibold"
                 onClick={() => {
-                  navigate("/");
+                  setMenuStatus(false);
+                  navigate("/contact");
                 }}
               >
                 Contact Us

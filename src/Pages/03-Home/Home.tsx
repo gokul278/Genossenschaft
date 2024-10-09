@@ -4,7 +4,7 @@ import assets1 from "../../assets/Img/Home/01-ASSETS.png";
 import logo1 from "../../assets/Img/Home/Logo/01-HOME.svg";
 import logo2 from "../../assets/Img/Home/Logo/02-AFFORD.svg";
 import logo3 from "../../assets/Img/Home/Logo/03-COMMUNITY.svg";
-import ReviewSlider from "../../Components/ReviewSlider/ReviewSlider";
+// import ReviewSlider from "../../Components/ReviewSlider/ReviewSlider";
 import bg3 from "../../assets/Img/Home/03-BG.png";
 import WhyCard from "../../Components/WhyCard/WhyCard";
 import Slider from "../../Components/Home-Slider/Slider";
@@ -172,19 +172,26 @@ const Home = () => {
         <div className="w-[95%] mt-14">
           <div className="w-[100%] mt-5 bg-[#fff] flex justify-center items-center">
             <div className="w-[90%] lg:w-[90%]">
-              <h1 className="text-[40px] font-mont font-bold mb-10">
-                View Our Properties
-              </h1>
-              <div className="w-full flex justify-center items-center">
-              <div className="w-full lg:w-[90%]">
-                <Slider />
+              <div className="flex w-full justify-between mb-10">
+                <h1 className="text-[40px] font-mont font-bold">
+                  View Our Properties
+                </h1>
+                <div className="text-[18px] justify-center items-center flex font-mont font-bold">
+                  <div className="py-2 px-3 rounded text-center cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont">
+                    View All
+                  </div>
+                </div>
               </div>
+              <div className="w-full flex justify-center items-center">
+                <div className="w-full lg:w-[90%]">
+                  <Slider />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="w-[95%] pt-14 pb-10 flex justify-center items-center">
+        {/* <div className="w-[95%] pt-14 pb-10 flex justify-center items-center">
           <div className="w-[90%]">
             <h1 className="text-[40px] font-mont font-bold">
               Words from Our Residents
@@ -193,7 +200,7 @@ const Home = () => {
               <ReviewSlider />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
