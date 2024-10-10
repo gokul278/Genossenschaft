@@ -6,10 +6,10 @@ import logo from "../../assets/Img/Logo/LOGO.png";
 export default function Header() {
   const navigate = useNavigate();
   const [menuStatus, setMenuStatus] = useState(false);
-  // const [menu, setMenu] = useState({
-  //   about: false,
-  //   pictures: false,
-  // });
+  const [menu, setMenu] = useState({
+    about: false,
+    pictures: false,
+  });
 
   return (
     <>
@@ -19,56 +19,148 @@ export default function Header() {
             menuStatus ? "fixed z-50" : null
           } justify-center items-center h-[80px] bg-white`}
         >
-          <div className="w-[80%] h-[10vh] lg:w-[90%] flex justify-evenly items-center">
-            <div className="w-[50%] lg:w-[10%] flex justify-start">
-              <img src={logo} className="w-[200px]" alt="log" />
+          <div className="w-[100%] h-[10vh] lg:w-[95%] flex justify-evenly items-center">
+            <div className="w-[50%] lg:w-[15%] flex justify-start ">
+              <img src={logo} className="h-[100%]" alt="log" />
             </div>
-            <div className="hidden lg:flex w-[80%] justify-center gap-x-10">
+            <div className="hidden lg:flex w-[80%] justify-center gap-x-9">
               <div
-                className="text-[18px] cursor-pointer font-mont mt-2 font-semibold underline-animation"
+                className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
                 onClick={() => {
                   setMenuStatus(false);
                   navigate("/");
                 }}
               >
-                Home
+                <span className="underline-animation">Home</span>
               </div>
               <div
-                className="text-[18px] cursor-pointer font-mont mt-2 font-semibold underline-animation"
+                className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold relative"
+                onMouseOver={() => {
+                  setMenu({ ...menu, about: true });
+                }}
+                onMouseOut={() => {
+                  setMenu({ ...menu, about: false });
+                }}
+              >
+                <span
+                  onClick={() => {
+                    navigate("about");
+                    setMenu({ ...menu, about: false });
+                  }}
+                  className="underline-animation"
+                >
+                  About Us&nbsp;&nbsp;<i className="fa-solid fa-caret-down"></i>
+                </span>
+                {menu.about && (
+                  <div
+                    onMouseOver={() => {
+                      setMenu({ ...menu, about: true });
+                    }}
+                    onMouseOut={() => {
+                      setMenu({ ...menu, about: false });
+                    }}
+                    className="absolute z-10 bg-white rounded mt-6 p-4 w-60 shadow-lg transition-opacity duration-300 ease-in-out"
+                  >
+                    <div
+                      className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer"
+                      onClick={() => {
+                        navigate("/board");
+                        setMenu({ ...menu, about: false });
+                      }}
+                    >
+                      Board
+                    </div>
+                    <div className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer">
+                      Organization Chart
+                    </div>
+                    <div
+                      onClick={() => {
+                        navigate("/address");
+                        setMenu({ ...menu, about: false });
+                      }}
+                      className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer"
+                    >
+                      Address
+                    </div>
+                  </div>
+                )}
+              </div>
+              <div
+                className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
                 onClick={() => {
                   navigate("/");
                 }}
               >
-                About Us
+                <span className="underline-animation">
+                  Regulations & Documents
+                </span>
               </div>
               <div
-                className="text-[18px] cursor-pointer font-mont mt-2 font-semibold underline-animation"
+                className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
                 onClick={() => {
                   navigate("/");
                 }}
               >
-                Resouces
+                <span className="underline-animation">Annual report</span>
               </div>
               <div
-                className="text-[18px] cursor-pointer font-mont mt-2 font-semibold underline-animation"
+                className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
                 onClick={() => {
                   navigate("/");
                 }}
               >
-                Properties
+                <span className="underline-animation">Application form</span>
               </div>
               <div
-                className="text-[18px] cursor-pointer font-mont mt-2 font-semibold underline-animation"
+                className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
                 onClick={() => {
                   setMenuStatus(false);
                   navigate("/contact");
                 }}
               >
-                Contact Us
+                <span className="underline-animation">Units</span>
+              </div>
+              <div
+                className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold relative"
+                onMouseOver={() => {
+                  setMenu({ ...menu, pictures: true });
+                }}
+                onMouseOut={() => {
+                  setMenu({ ...menu, pictures: false });
+                }}
+              >
+                <span className="underline-animation">
+                  Picture Gallery&nbsp;&nbsp;
+                  <i className="fa-solid fa-caret-down"></i>
+                </span>
+                {menu.pictures && (
+                  <div
+                    onMouseOver={() => {
+                      setMenu({ ...menu, pictures: true });
+                    }}
+                    onMouseOut={() => {
+                      setMenu({ ...menu, pictures: false });
+                    }}
+                    className="absolute z-10 bg-white rounded mt-6 p-4 w-58 shadow-lg transition-opacity duration-300 ease-in-out"
+                  >
+                    <div
+                      className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer"
+                      onClick={() => {
+                        navigate("/board");
+                        setMenu({ ...menu, about: false });
+                      }}
+                    >
+                      Settlement
+                    </div>
+                    <div className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer">
+                      Archive
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* <div
-                className="relative text-[16px] mt-2 cursor-pointer font-semibold"
+                className="relative text-[15px] mt-2 cursor-pointer font-semibold"
                 onMouseOver={() => {
                   setMenu({ ...menu, about: true });
                 }}
@@ -106,10 +198,10 @@ export default function Header() {
                 )}
               </div> */}
             </div>
-            <div className="w-[40%] lg:w-[10%] flex justify-end">
+            <div className="w-[10%] lg:w-[5%] flex justify-end">
               <img src={de} alt="de" className="w-[30px] h-[30px]" />
             </div>
-            <div className="w-[0%] ml-14 flex lg:hidden justify-center items-center">
+            <div className="w-[10%] flex lg:hidden justify-center items-center">
               <button
                 className={`relative order-10 block self-center lg:hidden ${
                   menuStatus
@@ -148,24 +240,24 @@ export default function Header() {
           }`}
         >
           <div className="flex flex-col items-center justify-start h-full">
-            <div className="w-[80%] mt-10">
-              {/* <div className="text-[18px] cursor-pointer font-mont pb-7 font-semibold">
+            <div className="w-[80%]">
+              {/* <div className="text-[15px] cursor-pointer font-mont pb-7 font-semibold">
                 About Us&nbsp;&nbsp;<i className="fa-solid fa-caret-down"></i>
               </div>
               <div className="w-[90%] flex flex-col items-center justify-center">
-                <div className="w-[80%] text-[16px] flex justify-start cursor-pointer pb-7 font-semibold">
+                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-7 font-semibold">
                   Board
                 </div>
-                <div className="w-[80%] text-[16px] flex justify-start cursor-pointer pb-7 font-semibold">
+                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-7 font-semibold">
                   Organization chart
                 </div>
-                <div className="w-[80%] text-[16px] flex justify-start cursor-pointer pb-7 font-semibold">
+                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-7 font-semibold">
                   Address
                 </div>
               </div> */}
 
               <div
-                className="text-[18px] cursor-pointer font-mont py-5 font-semibold"
+                className="text-[15px] py-5 cursor-pointer font-mont font-semibold"
                 onClick={() => {
                   setMenuStatus(false);
                   navigate("/");
@@ -173,38 +265,65 @@ export default function Header() {
               >
                 Home
               </div>
+              <div className="text-[15px] cursor-pointer font-mont font-semibold">
+                About Us&nbsp;&nbsp;<i className="fa-solid fa-caret-down"></i>
+              </div>
+              <div className="w-[90%] flex flex-col items-center justify-center">
+                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer py-5 font-normal font-mont">
+                  Board
+                </div>
+                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont">
+                  Organization chart
+                </div>
+                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont">
+                  Address
+                </div>
+              </div>
               <div
-                className="text-[18px] cursor-pointer font-mont py-5 font-semibold"
+                className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
                 onClick={() => {
                   navigate("/");
                 }}
               >
-                About Us
+                Regulations & Documents
               </div>
               <div
-                className="text-[18px] cursor-pointer font-mont py-5 font-semibold"
+                className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
                 onClick={() => {
                   navigate("/");
                 }}
               >
-                Resouces
+                Annual report
               </div>
               <div
-                className="text-[18px] cursor-pointer font-mont py-5 font-semibold"
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                Properties
-              </div>
-              <div
-                className="text-[18px] cursor-pointer font-mont py-5 font-semibold"
+                className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
                 onClick={() => {
                   setMenuStatus(false);
                   navigate("/contact");
                 }}
               >
-                Contact Us
+                Application form
+              </div>
+              <div
+                className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
+                onClick={() => {
+                  setMenuStatus(false);
+                  navigate("/contact");
+                }}
+              >
+                Units
+              </div>
+              <div className="text-[15px] cursor-pointer font-mont font-semibold">
+                Picture Gallery&nbsp;&nbsp;
+                <i className="fa-solid fa-caret-down"></i>
+              </div>
+              <div className="w-[90%] flex flex-col items-center justify-center">
+                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer py-5 font-normal font-mont">
+                  Settlement
+                </div>
+                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont">
+                  Archive
+                </div>
               </div>
             </div>
           </div>

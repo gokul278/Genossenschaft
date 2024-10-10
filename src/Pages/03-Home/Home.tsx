@@ -6,8 +6,11 @@ import logo2 from "../../assets/Img/Home/Logo/02-AFFORD.svg";
 import logo3 from "../../assets/Img/Home/Logo/03-COMMUNITY.svg";
 // import ReviewSlider from "../../Components/ReviewSlider/ReviewSlider";
 import bg3 from "../../assets/Img/Home/03-BG.png";
+import bg4 from "../../assets/Img/Home/04-BG.png";
 import WhyCard from "../../Components/WhyCard/WhyCard";
 import Slider from "../../Components/Home-Slider/Slider";
+import TextInput from "../../Components/Inputs/TextInput";
+import TextareaInput from "../../Components/Inputs/TextareaInput";
 
 const Home = () => {
   return (
@@ -94,7 +97,11 @@ const Home = () => {
             <h1 className="text-[40px] font-mont font-bold">Key Features</h1>
           </div>
           <div className="w-[90%] flex flex-wrap gap-x-10 justify-center items-center">
-            <div className="w-[300px] mt-10 lg:my-10 border-0 lg:border-r-2">
+            <div
+              className="w-[300px] mt-10 lg:my-10 border-0 lg:border-r-2"
+              data-aos="zoom-in"
+              data-aos-duration="400"
+            >
               <img className="w-[80px] h-[80px]" src={logo1} alt="logo1" />
               <h1 className="text-[22px] h-[60px] flex justify-start items-center font-mont font-bold mt-3">
                 Eco-Friendly Living
@@ -107,7 +114,11 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="w-[300px] mt-10 lg:my-10 border-0 lg:border-r-2">
+            <div
+              className="w-[300px] mt-10 lg:my-10 border-0 lg:border-r-2"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+            >
               <img className="w-[80px] h-[80px]" src={logo2} alt="logo1" />
               <h1 className="text-[22px] h-[60px] flex justify-start items-center font-mont font-bold mt-3">
                 Affordable Housing
@@ -120,7 +131,11 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="w-[300px]  my-10">
+            <div
+              className="w-[300px]  my-10"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+            >
               <img className="w-[80px] h-[80px]" src={logo3} alt="logo1" />
               <h1 className="text-[22px] h-[60px] flex justify-center items-center font-mont font-bold mt-3">
                 Community Development
@@ -185,6 +200,45 @@ const Home = () => {
               <div className="w-full flex justify-center items-center">
                 <div className="w-full lg:w-[90%]">
                   <Slider />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="w-[95%] mt-10 flex justify-center h-[auto] lg:h-screen pb-10"
+          style={{
+            background: `url(${bg4})`,
+            backgroundSize: "cover",
+            borderRadius: "10px",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="w-[90%] h-[auto] flex justify-center items-center flex-col lg:h-screen">
+            <h1 className="h-[20vh] text-[23px] lg:text-[30px] font-semibold font-mont text-[#fff] flex justify-center items-center">
+              Let's Connect
+            </h1>
+            <p className="text-[16px] font-normal font-mont text-[#fff] text-center">
+              Hundreds of people have found affordable housing through our
+              service. Let us connect to help you find a cooperative apartment
+              where you will realize savings and the strength of community bond.{" "}
+            </p>
+            <div className="w-[100%] lg:w-[50%] bg-white p-10 rounded justify-between mt-10">
+              <div className="w-[100%]">
+                <TextInput id="name" type="text" name="name" label="Name" />
+              </div>
+              <div className="w-[100%]">
+                <TextareaInput
+                  id="othercomments"
+                  name="othercomments"
+                  label="Any Other Comments"
+                />
+              </div>
+              <div className="w-full">
+                <div className="py-2 px-3 rounded text-center cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont">
+                  Submit
                 </div>
               </div>
             </div>

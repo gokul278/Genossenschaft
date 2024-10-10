@@ -17,7 +17,10 @@ const ContactUs = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full justify-center flex-col items-center flex">
+    <div
+      className="w-full justify-center flex-col items-center flex"
+      data-aos="fade-up"
+    >
       <div
         className="w-[95%] h-[50vh] flex justify-center items-center"
         style={{
@@ -29,18 +32,25 @@ const ContactUs = () => {
       >
         <div className="w-[90%]">
           <h1 className="text-[#fff] text-[30px] font-bold font-mont">
-            Contact Us
+            Address
           </h1>
           <div className="text-[#fff] text-[18px] font-normal font-mont mt-2">
             <span onClick={() => navigate("/")} className=" cursor-pointer">
               Home
             </span>{" "}
-            -{" "}
+            &nbsp;&nbsp;-&nbsp;&nbsp;{" "}
             <span
-              onClick={() => navigate("/contact")}
+              onClick={() => navigate("/about")}
               className="cursor-pointer"
             >
-              Contact Us
+              About Us
+            </span>
+            &nbsp;&nbsp;-&nbsp;&nbsp;{" "}
+            <span
+              onClick={() => navigate("/address")}
+              className="cursor-pointer"
+            >
+              Address
             </span>
           </div>
         </div>
@@ -59,7 +69,7 @@ const ContactUs = () => {
 
       <div className="w-[95%] my-10 flex justify-center items-center">
         <div className="w-[90%] flex flex-wrap justify-center gap-x-10 gap-y-10">
-          <div className="w-[300px] h-[200px] bg-[#fbfbfb] border flex justify-center flex-col items-center gap-y-10">
+          <div className="w-[300px] h-[200px] bg-[#fbfbfb] shadow-sm border flex justify-center flex-col items-center gap-y-10">
             <h1>
               <i className="text-[40px] text-[#555555] fa-solid fa-phone"></i>
             </h1>
@@ -67,7 +77,7 @@ const ContactUs = () => {
               +41 XXXXXXXX
             </p>
           </div>
-          <div className="w-[300px] h-[200px] bg-[#fbfbfb] border flex justify-center flex-col items-center gap-y-10">
+          <div className="w-[300px] h-[200px] bg-[#fbfbfb] shadow-sm border flex justify-center flex-col items-center gap-y-10">
             <h1>
               <i className="text-[40px] text-[#555555] fa-solid fa-envelope"></i>
             </h1>
@@ -75,7 +85,7 @@ const ContactUs = () => {
               XXXXXX@XXX.com
             </p>
           </div>
-          <div className="w-[300px] h-[200px] bg-[#fbfbfb] border flex justify-center flex-col items-center gap-y-9">
+          <div className="w-[300px] h-[200px] bg-[#fbfbfb] shadow-sm border flex justify-center flex-col items-center gap-y-9">
             <div className="flex justify-center flex-row items-center gap-x-10">
               <h1>
                 <i className="text-[40px] text-[#555555] fa-brands fa-facebook-f"></i>
@@ -88,7 +98,7 @@ const ContactUs = () => {
               </h1>
             </div>
 
-            <p className="text-[30px] text-[#000] font-bold font-mont">
+            <p className="text-[20px] text-[#000] font-bold font-mont">
               Social Media
             </p>
           </div>

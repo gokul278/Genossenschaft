@@ -5,6 +5,7 @@ import Footer from "./Pages/02-Footer/Footer";
 import Home from "./Pages/03-Home/Home";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import ContactUs from "./Pages/Contactus/ContactUs";
+import Aboutus from "./Pages/02-Aboutus/Aboutus";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Header />
           <Routes>
             <Route element={<Home />} path="/" index />
-            <Route element={<ContactUs />} path="/contact" />
+            <Route element={<Aboutus />} path="/about" />
+            <Route element={<ContactUs />} path="/address" />
           </Routes>
           <Footer />
         </BrowserRouter>
