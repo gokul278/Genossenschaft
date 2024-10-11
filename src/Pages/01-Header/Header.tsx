@@ -70,7 +70,13 @@ export default function Header() {
                     >
                       Board
                     </div>
-                    <div className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer">
+                    <div
+                      className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer"
+                      onClick={() => {
+                        navigate("/chart");
+                        setMenu({ ...menu, about: false });
+                      }}
+                    >
                       Organization Chart
                     </div>
                     <div
@@ -88,7 +94,7 @@ export default function Header() {
               <div
                 className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
                 onClick={() => {
-                  navigate("/");
+                  navigate("/regulations");
                 }}
               >
                 <span className="underline-animation">
@@ -98,7 +104,7 @@ export default function Header() {
               <div
                 className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
                 onClick={() => {
-                  navigate("/");
+                  navigate("/report");
                 }}
               >
                 <span className="underline-animation">Annual report</span>
@@ -106,7 +112,7 @@ export default function Header() {
               <div
                 className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
                 onClick={() => {
-                  navigate("/");
+                  navigate("/applicationform");
                 }}
               >
                 <span className="underline-animation">Application form</span>
@@ -115,7 +121,7 @@ export default function Header() {
                 className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
                 onClick={() => {
                   setMenuStatus(false);
-                  navigate("/contact");
+                  navigate("/units");
                 }}
               >
                 <span className="underline-animation">Units</span>
@@ -129,7 +135,13 @@ export default function Header() {
                   setMenu({ ...menu, pictures: false });
                 }}
               >
-                <span className="underline-animation">
+                <span
+                  onClick={() => {
+                    navigate("pictures");
+                    setMenu({ ...menu, pictures: false });
+                  }}
+                  className="underline-animation"
+                >
                   Picture Gallery&nbsp;&nbsp;
                   <i className="fa-solid fa-caret-down"></i>
                 </span>
@@ -146,13 +158,19 @@ export default function Header() {
                     <div
                       className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer"
                       onClick={() => {
-                        navigate("/board");
-                        setMenu({ ...menu, about: false });
+                        navigate("/settlement");
+                        setMenu({ ...menu, pictures: false });
                       }}
                     >
                       Settlement
                     </div>
-                    <div className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer">
+                    <div
+                      onClick={() => {
+                        navigate("/archive");
+                        setMenu({ ...menu, pictures: false });
+                      }}
+                      className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer"
+                    >
                       Archive
                     </div>
                   </div>
@@ -265,24 +283,49 @@ export default function Header() {
               >
                 Home
               </div>
-              <div className="text-[15px] cursor-pointer font-mont font-semibold">
+              <div
+                className="text-[15px] cursor-pointer font-mont font-semibold"
+                onClick={() => {
+                  setMenuStatus(false);
+                  navigate("/about");
+                }}
+              >
                 About Us&nbsp;&nbsp;<i className="fa-solid fa-caret-down"></i>
               </div>
               <div className="w-[90%] flex flex-col items-center justify-center">
-                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer py-5 font-normal font-mont">
+                <div
+                  onClick={() => {
+                    setMenuStatus(false);
+                    navigate("/board");
+                  }}
+                  className="w-[80%] text-[15px] flex justify-start cursor-pointer py-5 font-normal font-mont"
+                >
                   Board
                 </div>
-                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont">
+                <div
+                  onClick={() => {
+                    setMenuStatus(false);
+                    navigate("/chart");
+                  }}
+                  className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont"
+                >
                   Organization chart
                 </div>
-                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont">
+                <div
+                  onClick={() => {
+                    setMenuStatus(false);
+                    navigate("/address");
+                  }}
+                  className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont"
+                >
                   Address
                 </div>
               </div>
               <div
                 className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
                 onClick={() => {
-                  navigate("/");
+                  setMenuStatus(false);
+                  navigate("/regulations");
                 }}
               >
                 Regulations & Documents
@@ -290,7 +333,8 @@ export default function Header() {
               <div
                 className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
                 onClick={() => {
-                  navigate("/");
+                  setMenuStatus(false);
+                  navigate("/report");
                 }}
               >
                 Annual report
@@ -299,7 +343,7 @@ export default function Header() {
                 className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
                 onClick={() => {
                   setMenuStatus(false);
-                  navigate("/contact");
+                  navigate("/applicationform");
                 }}
               >
                 Application form
@@ -308,20 +352,38 @@ export default function Header() {
                 className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
                 onClick={() => {
                   setMenuStatus(false);
-                  navigate("/contact");
+                  navigate("/units");
                 }}
               >
                 Units
               </div>
-              <div className="text-[15px] cursor-pointer font-mont font-semibold">
+              <div
+                className="text-[15px] cursor-pointer font-mont font-semibold"
+                onClick={() => {
+                  setMenuStatus(false);
+                  navigate("/pictures");
+                }}
+              >
                 Picture Gallery&nbsp;&nbsp;
                 <i className="fa-solid fa-caret-down"></i>
               </div>
               <div className="w-[90%] flex flex-col items-center justify-center">
-                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer py-5 font-normal font-mont">
+                <div
+                  onClick={() => {
+                    setMenuStatus(false);
+                    navigate("/settlement");
+                  }}
+                  className="w-[80%] text-[15px] flex justify-start cursor-pointer py-5 font-normal font-mont"
+                >
                   Settlement
                 </div>
-                <div className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont">
+                <div
+                  onClick={() => {
+                    setMenuStatus(false);
+                    navigate("/archive");
+                  }}
+                  className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont"
+                >
                   Archive
                 </div>
               </div>

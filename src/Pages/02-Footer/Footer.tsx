@@ -1,7 +1,9 @@
 import "./Footer.css";
 import logo from "../../assets/Img/Logo/LOGO.png";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-full py-5 bg-white flex justify-center items-center">
       <div className="w-[95%] flex justify-center bg-[#fafafa] rounded-[10px]">
@@ -22,9 +24,9 @@ const Footer = () => {
             <div className="h-[60px]">
               <h1 className="text-[20px] font-bold font-mont">Contact Us</h1>
             </div>
-            <div className="w-full flex justify-start cursor-pointer pb-2">
+            <div className="w-full flex justify-start cursor-pointer pb-5">
               <div className="w-[15%] flex justify-start items-center">
-                <i className="text-[#555555] mb-2 fa-solid fa-phone"></i>
+                <i className="text-[#555555] text-[20px] mb-2 fa-solid fa-phone"></i>
               </div>
               <div className="w-[85%]">
                 <div className="font-normal font-mont text-[15px] text-[#555555] underline-animation">
@@ -32,9 +34,9 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-start cursor-pointer pb-2">
+            <div className="w-full flex justify-start cursor-pointer pb-5">
               <div className="w-[15%] flex justify-start items-center">
-                <i className="text-[#555555] mb-2 fa-solid fa-envelope"></i>
+                <i className="text-[#555555] text-[20px] mb-2 fa-solid fa-envelope"></i>
               </div>
               <div className="w-[85%]">
                 <div className="font-normal font-mont text-[15px] text-[#555555] underline-animation">
@@ -42,9 +44,9 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-start cursor-pointer pb-2">
+            <div className="w-full flex justify-start cursor-pointer pb-5">
               <div className="w-[15%] flex justify-start items-center">
-                <i className="text-[#555555] mb-2 fa-solid fa-location-dot"></i>
+                <i className="text-[#555555] text-[20px] mb-2 fa-solid fa-location-dot"></i>
               </div>
               <div className="w-[85%]">
                 <div className="font-normal font-mont text-[15px] text-[#555555] underline-animation">
@@ -77,7 +79,12 @@ const Footer = () => {
                 <i className="text-[#555555] mb-2 fa-solid fa-angle-right"></i>
               </div>
               <div className="w-[90%]">
-                <div className="font-normal font-mont text-[15px] text-[#555555] underline-animation">
+                <div
+                  className="font-normal font-mont text-[15px] text-[#555555] underline-animation"
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                >
                   Home
                 </div>
               </div>
@@ -87,7 +94,12 @@ const Footer = () => {
                 <i className="text-[#555555] mb-2 fa-solid fa-angle-right"></i>
               </div>
               <div className="w-[90%]">
-                <div className="font-normal font-mont text-[15px] text-[#555555] underline-animation">
+                <div
+                  className="font-normal font-mont text-[15px] text-[#555555] underline-animation"
+                  onClick={() => {
+                    navigate("/about");
+                  }}
+                >
                   About Us
                 </div>
               </div>
@@ -97,8 +109,13 @@ const Footer = () => {
                 <i className="text-[#555555] mb-2 fa-solid fa-angle-right"></i>
               </div>
               <div className="w-[90%]">
-                <div className="font-normal font-mont text-[15px] text-[#555555] underline-animation">
-                  Resources
+                <div
+                  className="font-normal font-mont text-[15px] text-[#555555] underline-animation"
+                  onClick={() => {
+                    navigate("/regulations");
+                  }}
+                >
+                  Regulations & Documents
                 </div>
               </div>
             </div>
@@ -107,8 +124,13 @@ const Footer = () => {
                 <i className="text-[#555555] mb-2 fa-solid fa-angle-right"></i>
               </div>
               <div className="w-[90%]">
-                <div className="font-normal font-mont text-[15px] text-[#555555] underline-animation">
-                  Properties
+                <div
+                  className="font-normal font-mont text-[15px] text-[#555555] underline-animation"
+                  onClick={() => {
+                    navigate("/report");
+                  }}
+                >
+                  Annual report
                 </div>
               </div>
             </div>
@@ -117,8 +139,40 @@ const Footer = () => {
                 <i className="text-[#555555] mb-2 fa-solid fa-angle-right"></i>
               </div>
               <div className="w-[90%]">
-                <div className="font-normal font-mont text-[15px] text-[#555555] underline-animation">
-                  Contact Us
+                <div
+                  className="font-normal font-mont text-[15px] text-[#555555] underline-animation"
+                  onClick={() => {
+                    navigate("/applicationform");
+                  }}
+                >
+                  Application form
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex justify-end cursor-pointer pb-2">
+              <div className="w-[10%] flex justify-start items-center">
+                <i className="text-[#555555] mb-2 fa-solid fa-angle-right"></i>
+              </div>
+              <div className="w-[90%]">
+                <div
+                  className="font-normal font-mont text-[15px] text-[#555555] underline-animation"
+                  onClick={() => {
+                    navigate("/units");
+                  }}
+                >
+                  Units
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex justify-end cursor-pointer pb-2">
+              <div className="w-[10%] flex justify-start items-center">
+                <i className="text-[#555555] mb-2 fa-solid fa-angle-right"></i>
+              </div>
+              <div className="w-[90%]">
+                <div className="font-normal font-mont text-[15px] text-[#555555] underline-animation"  onClick={() => {
+                    navigate("/pictures");
+                  }}>
+                  Picture Gallery
                 </div>
               </div>
             </div>

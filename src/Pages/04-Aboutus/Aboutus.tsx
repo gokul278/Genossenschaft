@@ -182,7 +182,7 @@ const Aboutus = () => {
               Ensuring cost-effective housing solutions for all.{" "}
             </p>
           </div>
-          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="400">
+          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="500">
             <div className="h-[130px] flex justify-between flex-col items-center">
               <img src={img2} className="w-[80px] h-[80px]" alt="afford" />
               <p className="font-bold text-[20px] font-mont">Community</p>
@@ -191,7 +191,7 @@ const Aboutus = () => {
               Creating a Supportive, inclusive, and engaged neighbourhood.
             </p>
           </div>
-          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="500">
+          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="700">
             <div className="h-[130px] flex justify-between flex-col items-center">
               <img src={img3} className="w-[80px] h-[80px]" alt="afford" />
               <p className="font-bold text-[20px] font-mont">Sustainability</p>
@@ -201,7 +201,7 @@ const Aboutus = () => {
               homes.
             </p>
           </div>
-          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="600">
+          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="900">
             <div className="h-[130px] flex justify-between flex-col items-center">
               <img src={img4} className="w-[80px] h-[80px]" alt="afford" />
               <p className="font-bold text-[20px] font-mont">Transparency</p>
@@ -210,7 +210,7 @@ const Aboutus = () => {
               Operating with transparency and openness among all members.
             </p>
           </div>
-          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="700">
+          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="1100">
             <div className="h-[130px] flex justify-between flex-col items-center">
               <img src={img5} className="w-[80px] h-[80px]" alt="afford" />
               <p className="font-bold text-[20px] font-mont">Collaboration</p>
