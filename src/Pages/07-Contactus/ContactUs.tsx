@@ -3,6 +3,7 @@ import bg1 from "../../assets/Img/Contact/01-BG.png";
 import TextInput from "../../Components/Inputs/TextInput";
 import SelectInput from "../../Components/Inputs/SelectInput";
 import TextareaInput from "../../Components/Inputs/TextareaInput";
+import { useTranslation } from "react-i18next";
 // import { useState } from "react";
 
 const ContactUs = () => {
@@ -15,6 +16,8 @@ const ContactUs = () => {
   // });
 
   const navigate = useNavigate();
+
+  const { t } = useTranslation("global");
 
   return (
     <div
@@ -32,37 +35,34 @@ const ContactUs = () => {
       >
         <div className="w-[90%]">
           <h1 className="text-[#fff] text-[30px] font-bold font-mont">
-            Address
+            {t("header.address")}
           </h1>
           <div className="text-[#fff] text-[18px] font-normal font-mont mt-2">
             <span onClick={() => navigate("/")} className=" cursor-pointer">
-              Home
+              {t("header.home")}
             </span>{" "}
             &nbsp;&nbsp;-&nbsp;&nbsp;{" "}
-            <span
-              onClick={() => navigate("/about")}
-              className="cursor-pointer"
-            >
-              About Us
+            <span onClick={() => navigate("/about")} className="cursor-pointer">
+              {t("header.about")}
             </span>
             &nbsp;&nbsp;-&nbsp;&nbsp;{" "}
             <span
               onClick={() => navigate("/address")}
               className="cursor-pointer"
             >
-              Address
+              {t("header.address")}
             </span>
           </div>
         </div>
       </div>
 
       <div className="w-[95%] flex justify-center items-center">
-        <div className="w-[90%] my-5">
-          <h1 className="text-[40px] font-mont font-bold">Get in Touch</h1>
+        <div className="w-[90%] my-10">
+          <h1 className="text-[40px] font-mont font-bold">
+            {t("address.get")}
+          </h1>
           <p className="text-[#555555] font-normal text-justify">
-            We're here to help you! If you have any questions concerning our
-            housing units, joining, or future community events, please do not
-            hesitate to reach out.
+            {t("address.getcontent")}
           </p>
         </div>
       </div>
@@ -99,17 +99,17 @@ const ContactUs = () => {
             </div>
 
             <p className="text-[20px] text-[#000] font-bold font-mont">
-              Social Media
+              {t("address.social")}
             </p>
           </div>
         </div>
       </div>
 
-      <div className="w-[95%] flex justify-center items-center">
+      <div className="w-[95%] flex justify-center items-center my-10">
         <div className="w-[90%] my-5 flex flex-col lg:flex-row justify-between gap-y-10">
           <div className="w-[100%] lg:w-[49%]">
             <h1 className="text-[40px] font-mont font-bold mb-10">
-              Contact Form
+              {t("address.contactform")}
             </h1>
             <div>
               <TextInput id="name" type="text" name="name" label="Name" />
@@ -146,7 +146,7 @@ const ContactUs = () => {
             </div>
             <div className="mt-10">
               <div className="py-2 px-3 rounded text-center cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont">
-                Send a Message
+                {t("address.sendbtn")}
               </div>
             </div>
           </div>
@@ -162,7 +162,7 @@ const ContactUs = () => {
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe> */}
             <h1 className="text-[40px] font-mont font-bold mb-10">
-              Our Location
+              {t("address.ourlocation")}
             </h1>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.684892936333!2d78.14989567452514!3d11.645788388560824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babef6bdbbc3f7d%3A0x404c804a4826efdf!2sZAdroit%20IT%20Solutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1728453895619!5m2!1sen!2sin"

@@ -1,0 +1,159 @@
+{
+  "header": {
+    "home": "Startseite",
+    "about": "über uns",
+    "board": "Vorstand",
+    "chart": "Organigramm",
+    "address": "Anschrift",
+    "regulations": "Reglemente & Dokumente",
+    "report": "Jahresbericht",
+    "form": "Anmeldeformular",
+    "units": "Wohneinheiten",
+    "gallery": "Bildergalerie",
+    "settlement": "Siedlung",
+    "archive": "Archiv"
+  },
+  "footer": {
+    "content": "Schaffung nachhaltiger, integrativer und erschwinglicher Wohnungen für eine bessere Zukunft. Unser genossenschaftliches Wohnen bietet eine einzigartige Mischung aus Wohnen mit modernem Design und sozialer Vision für eine Zukunft, die für alle besser wird.",
+    "quick": "Schnelle Links",
+    "contact": "Kontaktieren Sie uns"
+  },
+  "home": {
+    "heading1": "Willkommen bei der Genossenschaft GASI",
+    "heading2": "Ihr nachhaltiges Genossenschaftswohnen in Zürich",
+    "content1": "Erleben Sie den Komfort des genossenschaftlichen Lebens in einer lebendigen, nachhaltigen und integrativen Umgebung. Bei der Genossenschaft GASI glauben wir daran, eine Immobilie zu schaffen, die ein starkes Zugehörigkeitsgefühl und gemeinsame Werte fördert.",
+    "mainhead1": "Ein",
+    "mainhead2": "Cooperative Wohnerlebnis",
+    "mainhead3": "wie kein anderer",
+    "mainheadcontent": "Die Genossenschaft GASI ist mehr als nur eine Wohnungsgenossenschaft – sie ist eine aktive Gemeinschaft, die sich für Nachhaltigkeit einsetzt und damit enge Verbindungen zwischen den Menschen aufbaut. Unser genossenschaftliches Wohnen bietet eine einzigartige Mischung aus Wohnen mit modernem Design und sozialer Vision für eine Zukunft, die für alle besser wird. Von einem ruhigen Rückzugsort bis hin zu einer lebendigen sozialen Atmosphäre sind Sie herzlich eingeladen, das Ambiente des Lebens zu erleben.",
+    "keyhead": "Hauptmerkmale",
+    "keyhead1": "Umweltfreundlich leben",
+    "keycontent1": "Nachhaltigkeit ist das Wort, das wir bei allem, was wir tun, immer wieder betonen. Von energieeffizienten Baumaterialien bis hin zu umweltfreundlichen Geräten ist es unser Ziel, unsere Auswirkungen auf die Umwelt zu minimieren.",
+    "keyhead2": "Bezahlbarer Wohnraum",
+    "keycontent2": "Genießen Sie den Raum zum Leben, ohne ein Loch in die Tasche zu graben. Unsere Einheiten sind zu wettbewerbsfähigen Preisen erhältlich, um die Zugänglichkeit für alle zu gewährleisten, was die Vielfalt in unseren Gemeinden fördert.",
+    "keyhead3": "Entwicklung der Gemeinschaft",
+    "keycontent3": "Wir fördern kollaborative Innovation und schaffen einen einladenden Raum, in dem Nachbarn zusammenkommen und gemeinsame Erlebnisse gedeihen. Durch Gemeinschaftsveranstaltungen stärken wir die Bindungen und verbessern unser Leben.",
+    "join": "Schließen Sie sich uns noch heute an!",
+    "whyquestion": "Warum sollten Sie sich für die Genossenschaft GASI entscheiden?",
+    "whyhead1": "Bezahlbares Wohnen im umkämpften Schweizer Wohnungsmarkt",
+    "whycontent1": "Wohnraum ist in der Schweiz, vor allem in Städten wie Zürich, knapp und teuer. Das genossenschaftliche Wohnmodell hingegen ermöglicht ein gemeinnütziges, preisgünstiges Angebot von Wohnraum. Die Genossenschaft GASI sorgt dafür, dass die Mieten, die sie zahlt, im Vergleich zu den Angeboten privater Vermieter oder Unternehmen deutlich niedriger sind, und spart so auf einem deutlich wettbewerbsfähigen Niveau.",
+    "whyhead2": "Ein Community-Erlebnis wie kein anderes",
+    "whycontent2": "Abgesehen von den wirtschaftlichen Vorteilen hat das gemeinsame Wohnen auch soziale Vorteile in Bezug auf die Konnektivität innerhalb der Gemeinschaft. Die Bewohner werden in die Entscheidungsfindung einbezogen und genießen einen lebendigen, warmen Raum, der Interaktion und gegenseitige Unterstützung fördert.",
+    "whyhead3": "Stressfreier Gehäuseprozess",
+    "whycontent3": "In der Genossenschaft GASI machen wir die Wohnungssuche stressfrei. Unsere genossenschaftlichen Wohnungen bieten niedrigere Preise als private Vermietungen, mit einem gemeinschaftsorientierten Ansatz, der mehr als nur erschwingliches Wohnen bietet – Ruhe und eine einladende Umgebung. Genießen Sie einfachen Zugang zu hochwertigem Wohnraum ohne endloses Suchen.",
+    "viewhead": "Sehen Sie sich unsere Immobilien an",
+    "viewbtn": "Alle anzeigen",
+    "lets": "Lassen Sie uns in Kontakt treten",
+    "letscontent": "Hunderte von Menschen haben über unseren Service bezahlbaren Wohnraum gefunden. Lassen Sie uns in Verbindung treten, um Ihnen bei der Suche nach einer Genossenschaftswohnung zu helfen, in der Sie Einsparungen und die Stärke der Gemeinschaftsbindung realisieren können.",
+    "submitbtn": "Senden"
+  },
+  "about": {
+    "content1": "Bei der Genossenschaft GASI kuratieren wir erschwinglichen Genossenschaftswohnungen in Zürich, um eine unterstützende und nachhaltige Gemeinschaft für alle zu schaffen. Gegründet mit der Mission, die Wohnbedürfnisse vieler Menschen zu erfüllen, haben wir uns zu einer vorbildlichen Genossenschaft entwickelt, die Erschwinglichkeit mit einem energischen Gemeinschaftsgefühl verbindet. Wir sind im Laufe der Jahre gewachsen und haben uns so gestaltet, dass unsere Mitglieder qualitativ hochwertigen Wohnraum ohne die hohen Preise des privaten Mietmarktes genießen.",
+    "content2": "Wir sind stolz darauf, Wohneinheiten zu niedrigeren Mieten anzubieten, die es den Mitgliedern ermöglichen, den Komfort und die Bequemlichkeit einer gut vernetzten, komfortablen und umweltfreundlichen Umgebung zu genießen.",
+    "historyhead": "Geschichte",
+    "historycontent": "Das Kohlekraftwerk Zürich, Schlieren wurde 1898 in Betrieb genommen, einschließlich einer wichtigen Infrastruktur wie dem Gasometer und der dazugehörigen Arbeitersiedlung, um schnell verfügbare Arbeitskräfte zu erhalten. Das Kraftwerk wurde 1974 geschlossen, als Erdgas in der Schweiz eingeführt wurde. Einige Gebäude wurden abgerissen, vermietet und verkauft. 1984 schlug die Zürcher Gasversorgungsgesellschaft (GVZ) vor, die Siedlung in eine Genossenschaft umzuwandeln, ein Konzept, das von den Bewohnerinnen und Bewohnern gut angenommen wurde. Am 24. Mai 1984 erwachte die Genossenschaft GASI zum Leben, symbolisiert durch den Wasserturm im Logo. Die Genossenschaft setzt sich weiterhin für die Bereitstellung von bezahlbarem Wohnraum und den Erhalt ihres industriellen Erbes ein.",
+    "our": "Unser",
+    "vision": "Vision",
+    "mission": "Mission",
+    "visioncontent": "MissonUnsere Vision bei der Genossenschaft GASI ist es, eine vitale, integrative Gemeinschaft zu schaffen, die Menschen aus allen Gesellschaftsschichten erschwinglichen, qualitativ hochwertigen genossenschaftlichen Wohnraum bietet. Unser Ziel ist es, den genossenschaftlichen Wohnungsbau zu einer langfristigen Lösung für das Wohnungsproblem in Zürich zu machen, indem wir auf Nachhaltigkeit setzen.",
+    "missioncontent": "Unsere Mission ist einfach: bezahlbaren, gemeinnützigen Wohnraum in Zürich bereitzustellen, der das Leben so sicher, komfortabel und umweltbewusst wie möglich macht. Das Funktionsprinzip der Genossenschaft GASI setzt auf Zusammenarbeit und gemeinsame Verantwortung, damit sich jedes Mitglied wohlfühlen und die Gemeinschaft mitentwickeln kann.",
+    "core": "Grundwerte",
+    "corehead1": "Erschwinglichkeit",
+    "corehead2": "Gemeinschaft",
+    "corehead3": "Nachhaltigkeit",
+    "corehead4": "Transparenz",
+    "corehead5": "Zusammenarbeit",
+    "corecontent1": "Gewährleistung kostengünstiger Wohnlösungen für alle.",
+    "corecontent2": "Schaffung einer unterstützenden, integrativen und engagierten Nachbarschaft.",
+    "corecontent3": "Pendeln Umweltfreundliche Praktiken und energieeffiziente Häuser.",
+    "corecontent4": "Wir arbeiten mit Transparenz und Offenheit unter allen Mitgliedern.",
+    "corecontent5": "Förderung der Beteiligung der Mitglieder an Entscheidungsprozessen.",
+    "join": "Treten Sie noch heute der Genossenschaft GASI bei!",
+    "content": "Auf der Suche nach bezahlbarem Genossenschaftswohnungsbau in Zürich? Wir bieten mehr als nur einen Ort zum Wohnen. Werden Sie Teil unserer wachsenden Community und genießen Sie niedrigere Mieten, gemeinschaftsorientiertes Wohnen und nachhaltige Wohnmöglichkeiten. Starten Sie noch heute und sichern Sie sich Ihr günstiges Zuhause in Zürich!"
+  },
+  "board": {
+    "content": "Unser Vorstand hat es sich zur Aufgabe gemacht, ein Umfeld zu schaffen, das Zusammenarbeit, Erschwinglichkeit, Nachhaltigkeit und Inklusion umfasst. Alle unsere Bemühungen konzentrieren sich darauf, die Interessen unserer Einwohner zu schützen und gleichzeitig die ökologischen, sozialen und wirtschaftlichen Werte zu respektieren.",
+    "intro": "Vorstellung der Vorstandsmitglieder",
+    "head1": "Unser Engagement für die Gemeinschaft",
+    "content1": "Der Vorstand engagiert sich aktiv mit unseren Mitgliedern in Bezug auf die Führung und das Management der Genossenschaft, damit niemand bei der Arbeit unserer Genossenschaft außen vor bleibt. Aus diesem Grund praktizieren wir eine gemeinsame Governance, und jedes Mitglied sollte seine Rolle bei allen Entscheidungen spielen, die unsere Gemeinschaft betreffen könnten.",
+    "presidium": "Präsidium",
+    "protocol": "Protokoll",
+    "finances": "Finanzen",
+    "assessor": "Beisitzerin"
+  },
+  "chart": {
+    "content1": "Unsere Organisationsstruktur fördert eine fundierte Entscheidungsfindung und die aktive Beteiligung der Mitglieder.",
+    "content2": "Hier ist ein Überblick über die wichtigsten Rollen und Abteilungen, die für unsere genossenschaftliche Wohnungsgemeinschaft von entscheidender Bedeutung sind:"
+  },
+  "address": {
+    "get": "In Kontakt kommen",
+    "getcontent": "Wir sind hier, um Ihnen zu helfen! Wenn Sie Fragen zu unseren Wohneinheiten, zum Beitritt oder zu zukünftigen Community-Veranstaltungen haben, zögern Sie bitte nicht, sich an uns zu wenden.",
+    "social": "Soziale Medien",
+    "contactform": "Kontaktformular",
+    "ourlocation": "Unser Standort",
+    "sendbtn": "Senden Sie eine Nachricht"
+  },
+  "documents": {
+    "head": "Willkommen in unserem Resource Hub",
+    "content": "Erkunden Sie unser Repository mit Dokumenten, Berichten und Tools, die entwickelt wurden, um unseren Bewohnern und potenziellen Mitgliedern zu helfen. Transparenz und Zugänglichkeit sind für uns von zentraler Bedeutung. Jeder sollte gut informiert und befähigt sein, in unseren Gemeinden sein Bestes zu geben.",
+    "docu&repo": "Dokumente & Berichte",
+    "docucontent": "Hier finden Sie eine Sammlung aktuell gültiger Dokumente der Genossenschaft GASI zum Download und Ausdruck.",
+    "document": "Dokumente",
+    "bylaws": "Statuten",
+    "chart": "Organigramm",
+    "rules": "Hausordnung",
+    "regulations": "Reglement",
+    "annualreport": "Jahresberichte",
+    "annualreports": "Jahresbericht"
+  },
+  "report": {
+    "content1": "Liebe GenossenschafterInnen, liebe BewohnerInnen",
+    "content2": "Ich blicke auf ein reich befrachtetes und arbeitsintensives Jahr 2020 zurück. Die markantesten Themen fasse ich in diesem Bericht zusammen.",
+    "historyhead": "Zusammenarbeit mit der Denkmalpflege",
+    "historycontent1": "Ein kontroverses Thema welches im Vorstand immer wieder zu spannenden Diskussion führt.",
+    "historycontent2": "Fakten:",
+    "histiropoint1": "Seit 20 Jahren sind wir Bestandteil des Eidgenössischen Inventars der schützenswerten Objekte!",
+    "histiropoint2": "Veränderungen an den Gebäuden müssen zwingend mit dem Denkmalschutz abgesprochen werden.",
+    "histiropoint3": "Der Denkmalschutz beteiligt sich mit 30% an den Kosten für Unterhalt und Instandhaltung der Objekte.",
+    "histiropoint4": "Nach meinen Evaluationen bin ich zur Überzeugung gekommen, dass die Vorteile einer guten Zusammenarbeit mit dem Denkmalschutz die Nachteile überwiegen.",
+    "nexthead": "Ausblick auf die nächsten 20 Jahre!",
+    "nextcontent1": "Die Häuser sind inzwischen über 120 Jahre alt. Unterhalt und Reparaturen werden immer aufwändiger. Es ist nur eine Frage der Zeit, bis wir mit grösseren Sanierungsarbeiten konfrontiert sind.",
+    "nextpoint1": "Kanalisations-und-Abwasserleitungen sind in einem Zustand welche nicht nur mir schlaflose Nächte bereiten.",
+    "nextpoint2": "Jährlich sind wir mit Wasserleitungsbrüchen in den Häusern und Kellergeschossen konfrontiert.",
+    "nextpoint3": "Die elektrischen Installationen entsprechen zwar nicht den Normen von 1901. Immerhin unterliegen diese bereits den Normen von 1957.",
+    "nextpoint4": "Die Fernwärmeleitungen mit welchen ein grosser Teil der Östlichen Genossenschaft versorgt wird stehen vor dem Kollaps.",
+    "nextpoint5": "Die autonomen Heizsysteme mit welchen die anderen Häuser beheizt werden sind mit ihren 20 Jahren auch am Ende ihrer Lebensdauer angelangt. Zudem steigt der politische – und schliesslich der gesetzliche Druck, sich von fossilen Energiequellen zu verabschieden.",
+    "nextpoint6": "All das sind Herausforderungen, für die es gilt, Lösungen anzudenken. Die Ideen gehen von zerfallen lassen bis zur Totalsanierung aller Gebäude.",
+    "nextpoint7": "Als Gründungsmitglied und Präsident liegt mir GASI am Herzen. Ich werde alles dafür tun, die Zukunft unserer Genossenschaft langfristig zu sichern. Ich freue mich auf",
+    "nextpoint8": "Ihre Meinungen und Ideen zu hören.",
+    "whathead": "Was ist noch so alles im Jahr 2020 gelaufen?",
+    "whatpoint1": "Trotz erfolgreichem Rekurs hat im Dezember der Kanton das Projekt Kantonsstrasse erneut in unveränderter Form aufgelegt. Wir müssten Gartenanteile für den Rechtsabbieger auf die Gasometer brücke, preisgeben. Die Stadt Schlieren unterstützt uns in unseren Anliegen.",
+    "whatpoint2": "Die Aussenrennovation der Industriestrasse 9 ist, nachdem der Denkmalschutz einen Baustopp verhängt hatte, inzwischen abgeschlossen.",
+    "whatpoint3": "Der Ersatz der alten Garagen durch moderne und grössere Garagenboxen wurde ein weiteres mal verzögert. Die Stadt Schlieren wollte wissen, ob der Boden mit Umweltbelastendem Material kontaminiert ist. Nachdem das Ergebnis nun vorliegt, können wir voraussichtlich im September mit der definitiven Baubewilligung rechnen.",
+    "final1": "Allen meinen VorstandskollegInnen möchte ich für die Unterstützung und die Arbeit danken, welche sie für unsere Gemeinschaft geleistet haben.",
+    "final2": "Ich freue mich, möglichst viele von Euch an der GV anzutreffen.",
+    "final3": "Präsident der Genossenschaft GASI"
+  },
+  "form": {
+    "content1": "Das Anmeldeformular kann hier als PDF-Datei heruntergeladen werden."
+  },
+  "units": {
+    "head": "Finden Sie Ihr perfektes Zuhause unter Genossenschaft GASI",
+    "content": "Entdecken Sie eine Auswahl an Wohneinheiten, die auf unterschiedliche Bedürfnisse und Lebensstile zugeschnitten sind. Unsere Genossenschaftswohnungen bieten eine moderne Ausstattung, eine ansprechende Architektur und ein starkes Gemeinschaftsgefühl.",
+    "available": "Verfügbar Wohneinheiten"
+  },
+  "gallery": {
+    "head1": "Galerie der Immobilien",
+    "content1": "Entdecken Sie die lebendigen Gemeinschaften und innovativen Wohnlösungen der Genossenschaft GASI. Unsere Genossenschaftsimmobilien sind so konzipiert, dass sie ein Gefühl der Zugehörigkeit, Nachhaltigkeit und Inklusivität fördern. Entdecken Sie die Häuser, aus denen sich unsere Genossenschaft zusammensetzt, indem Sie unsere Galerien erkunden.",
+    "head2": "Entdecken Sie unsere Immobilien",
+    "content2": "Wir laden Sie ein, einen Blick auf unsere Immobilien zu werfen und den Geist des genossenschaftlichen Lebens zu erleben. Egal, ob Sie sich für unsere aktuellen Siedlungen interessieren oder die Geschichte unserer Entwicklungen durch die Archive erkunden möchten, die Galerie bietet einen Einblick in die lebendigen Gemeinschaften, die wir aufgebaut haben."
+  },
+  "settlement": {
+    "content1": "In unserer Rubrik 'Siedlungen' finden Sie aktuelle Immobilien in unseren genossenschaftlichen Wohngemeinschaften. Jede Immobilie ist sorgfältig gestaltet, um die Bedürfnisse unserer Bewohner zu erfüllen und modernes Wohnen mit nachhaltigen Praktiken in Einklang zu bringen. Von Grünflächen bis hin zu Gemeinschaftsflächen fördern unsere Siedlungen das Gemeinschaftsgefühl und das Wohlbefinden.",
+    "content2": "Klicken Sie sich durch die Galerie, um Bilder unserer aktuellen Siedlungen zu sehen und die Annehmlichkeiten, Layouts und Gemeinschaftsräume hervorzuheben, die unsere Genossenschaftswohnungen ausmachen."
+  },
+  "archive": {
+    "content1": "In unserem Archivbereich finden Sie vergangene Immobilien und/oder Archive, die die Geschichte unserer Genossenschaft mitgeprägt haben. Diese Immobilien sind zwar nicht mehr verfügbar, aber sie bleiben ein wichtiger Teil unseres Weges zur Schaffung von nachhaltigem und erschwinglichem Wohnraum in Zürich.",
+    "content2": "Stöbern Sie in unseren Archiven, um sich ein Bild von der Entwicklung unserer Genossenschaft und dem Einfluss zu machen, den wir auf die Zürcher Wohnungslandschaft ausgeübt haben."
+  }
+}

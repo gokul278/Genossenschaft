@@ -13,9 +13,12 @@ import img5 from "../../assets/Img/About/ICONS/COLLABORATION.svg";
 import TextareaInput from "../../Components/Inputs/TextareaInput";
 import TextInput from "../../Components/Inputs/TextInput";
 import bg4 from "../../assets/Img/Home/04-BG.png";
+import { useTranslation } from "react-i18next";
 
 const Aboutus = () => {
   const navigate = useNavigate();
+
+  const { t } = useTranslation("global");
   return (
     <div
       className="w-full justify-center flex-col items-center flex"
@@ -32,36 +35,28 @@ const Aboutus = () => {
       >
         <div className="w-[90%]">
           <h1 className="text-[#fff] text-[30px] font-bold font-mont">
-            About Us
+            {t("header.about")}
           </h1>
           <div className="text-[#fff] text-[18px] font-normal font-mont mt-2">
             <span onClick={() => navigate("/")} className=" cursor-pointer">
-              Home
+              {t("header.home")}
             </span>{" "}
             &nbsp;&nbsp;-&nbsp;&nbsp;{" "}
             <span onClick={() => navigate("/about")} className="cursor-pointer">
-              About Us
+              {t("header.about")}
             </span>
           </div>
         </div>
       </div>
 
       <div className="w-[85%] mt-10">
-        <HeadingLabel label="About Us" />
+        <HeadingLabel label={t("header.about")} />
         <div className="w-[100%] flex flex-col lg:flex-row justify-between gap-y-10 h-[auto] lg:h-[45vh] items-center">
           <div className="w-[100%] lg:w-[60%] text-[16px] font-normal h-[auto] lg:h-[40vh] flex justify-center items-center font-mont text-justify">
-            At Genossenschaft GASI, we curate affordable cooperative housing in
-            Zurich to power a supportive and sustainable community for all.
-            Founded with a mission to meet the housing needs of many, we have
-            grown to become a model cooperative, blending affordability with an
-            energetic sense of community. We've grown over the years and shaped
-            ourselves to ensure our members enjoy high-quality living spaces
-            minus the hefty price tag prices of the private rental market.
+            {t("about.content1")}
             <br />
             <br />
-            We pride ourselves on delivering housing units at lower rents that
-            enable members to have comfort and convenience of a well-connected,
-            comfortable, and environmentally friendly environment.
+            {t("about.content2")}
           </div>
           <div className="w-[100%] lg:w-[38%] h-[auto] lg:h-[50vh] flex flex-col justify-center items-start">
             <div className="w-[100%] flex justify-end">
@@ -106,117 +101,128 @@ const Aboutus = () => {
             className="w-[100%] lg:w-[48%] pb-10 lg:pb-0 flex flex-col justify-center items-start"
             data-aos="fade-right"
           >
-            <HeadingLabel label="History" />
+            <HeadingLabel label={t("about.historyhead")} />
             <p className="mt-3 text-[16px] font-normal font-mont text-justify">
-              The Coal gas plant of Zurich, Schlieren started operations in 1898
-              including a key infrastructure like the gasometer and workers’
-              housing estate associated with it, to maintain readily available
-              workforce. The plant was closed in 1974 when natural gas was
-              introduced in Switzerland. Some buildings were demolished, rented
-              and sold out. In 1984, the Zurich Gas Supply Company (GVZ)
-              suggested turning the housing estate into a cooperative, a concept
-              that was well-received by the residents. On May 24 1984, the
-              Genossenschaft GASI came to life symbolized by the water tower in
-              its logo. The cooperative remains committed to providing
-              affordable housing and preserving its industrial heritage.
+              {t("about.historycontent")}
             </p>
           </div>
         </div>
       </div>
 
       <div
-        className="w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around h-[450px] lg:h-[120px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full"
+        className="w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around h-[450px] lg:h-[140px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full"
         data-aos="fade-up"
       >
         <div className="block lg:hidden">
           <div className="w-[140px] h-[140px] border-[3px] border-[#ffcc41] flex flex-col justify-center items-center text-[20px] font-mont font-bold bg-[#fff] text-[#000] rounded-full">
-            Our <div>Vision</div>
+            {t("about.our")} <div>Vision</div>
           </div>
         </div>
         <div className="w-[85%] lg:w-[80%] h-[230px] lg:h-[120px] text-justify lg:text-center font-mont flex justify-center items-center">
-          Our Vision at Genossenschaft GASI is to create a vital inclusive
-          community offering affordable, high-quality cooperative housing to
-          people from all walks of life. We aim to make cooperative housing a
-          long-term solution for the housing problem in Zurich by emphasizing
-          sustainability.{" "}
+          {t("about.visioncontent")}
         </div>
         <div className="hidden lg:block">
-          <div className="w-[140px] h-[140px] border-[3px] border-[#ffcc41] flex flex-col justify-center items-center text-[20px] font-mont font-bold  -mt-1 -mr-12 bg-[#fff] text-[#000] rounded-full">
-            Our <div>Vision</div>
+          <div className="w-[160px] p-2 h-[160px] border-[3px] border-[#ffcc41] flex flex-col justify-center items-center text-[20px] font-mont font-bold  -mt-1 -mr-12 bg-[#fff] text-[#000] rounded-full">
+            {t("about.our")} <div>Vision</div>
           </div>
         </div>
       </div>
 
       <div
-        className="w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around h-[450px] lg:h-[120px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full rounded-l"
+        className="w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around h-[450px] lg:h-[140px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full rounded-l"
         data-aos="fade-up"
       >
         <div className="block lg:hidden">
           <div className="w-[140px] h-[140px] border-[3px] border-[#ffcc41] flex flex-col justify-center items-center text-[20px] font-mont font-bold bg-[#fff] text-[#000] rounded-full">
-            Our <div>Mission</div>
+            {t("about.our")} <div>Mission</div>
           </div>
         </div>
         <div className="w-[85%] lg:w-[80%] h-[230px] lg:h-[120px] text-justify lg:text-center font-mont flex justify-center items-center">
-          Our mission is simple: to provide affordable, non-profit housing in
-          Zurich that makes living as safe, comfortable, and environmentally
-          conscious as possible. The operating principle of Genossenschaft GASI
-          focuses on cooperation and shared responsibility so each member can
-          feel comfortable and help develop the community.
+          {t("about.missioncontent")}
         </div>
         <div className="hidden lg:block">
-          <div className="w-[140px] h-[140px] border-[3px] border-[#ffcc41] flex flex-col justify-center items-center text-[20px] font-mont font-bold  -mt-1 -mr-12 bg-[#fff] text-[#000] rounded-full">
-            Our <div>Mission</div>
+          <div className="w-[160px] h-[160px] border-[3px] border-[#ffcc41] flex flex-col justify-center items-center text-[20px] font-mont font-bold  -mt-1 -mr-12 bg-[#fff] text-[#000] rounded-full">
+            {t("about.our")} <div>Mission</div>
           </div>
         </div>
       </div>
 
       <div className="w-[90%] my-10">
-        <HeadingLabel label="Core Values" />
+        <HeadingLabel label={t("about.core")} />
         <div className="w-full mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-10">
-          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="300">
+          <div
+            className="w-[200px] h-[250px] flex flex-col justify-around items-center"
+            data-aos="zoom-in"
+            data-aos-duration="300"
+          >
             <div className="h-[130px] flex justify-between flex-col items-center">
               <img src={img1} className="w-[80px] h-[80px]" alt="afford" />
-              <p className="font-bold text-[20px] font-mont">Affordability</p>
+              <p className="font-bold text-[20px] font-mont">
+                {t("about.corehead1")}
+              </p>
             </div>
             <p className="font-normal mt-[10px] h-[80px] lg:h-[110px] text-center text-[#555555] text-[15px] font-mont">
-              Ensuring cost-effective housing solutions for all.{" "}
+              {t("about.corecontent1")}
             </p>
           </div>
-          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="500">
+          <div
+            className="w-[200px] h-[250px] flex flex-col justify-around items-center"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+          >
             <div className="h-[130px] flex justify-between flex-col items-center">
               <img src={img2} className="w-[80px] h-[80px]" alt="afford" />
-              <p className="font-bold text-[20px] font-mont">Community</p>
+              <p className="font-bold text-[20px] font-mont">
+                {t("about.corehead2")}
+              </p>
             </div>
             <p className="font-normal mt-[10px] h-[110px] text-center text-[#555555] text-[15px] font-mont">
-              Creating a Supportive, inclusive, and engaged neighbourhood.
+              {t("about.corecontent2")}
             </p>
           </div>
-          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="700">
+          <div
+            className="w-[200px] h-[250px] flex flex-col justify-around items-center"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+          >
             <div className="h-[130px] flex justify-between flex-col items-center">
               <img src={img3} className="w-[80px] h-[80px]" alt="afford" />
-              <p className="font-bold text-[20px] font-mont">Sustainability</p>
+              <p className="font-bold text-[20px] font-mont">
+                {t("about.corehead3")}
+              </p>
             </div>
             <p className="font-normal mt-[10px] h-[110px] text-center text-[#555555] text-[15px] font-mont">
-              Commuting Environment-friendly practices and energy efficient
-              homes.
+              {t("about.corecontent3")}
             </p>
           </div>
-          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="900">
+          <div
+            className="w-[200px] h-[250px] flex flex-col justify-around items-center"
+            data-aos="zoom-in"
+            data-aos-duration="900"
+          >
             <div className="h-[130px] flex justify-between flex-col items-center">
               <img src={img4} className="w-[80px] h-[80px]" alt="afford" />
-              <p className="font-bold text-[20px] font-mont">Transparency</p>
+              <p className="font-bold text-[20px] font-mont">
+                {t("about.corehead4")}
+              </p>
             </div>
             <p className="font-normal mt-[10px] h-[110px] text-center text-[#555555] text-[15px] font-mont">
-              Operating with transparency and openness among all members.
+              {t("about.corecontent4")}
             </p>
           </div>
-          <div className="w-[200px] h-[250px] flex flex-col justify-around items-center" data-aos="zoom-in" data-aos-duration="1100">
+          <div
+            className="w-[200px] h-[250px] flex flex-col justify-around items-center"
+            data-aos="zoom-in"
+            data-aos-duration="1100"
+          >
             <div className="h-[130px] flex justify-between flex-col items-center">
               <img src={img5} className="w-[80px] h-[80px]" alt="afford" />
-              <p className="font-bold text-[20px] font-mont">Collaboration</p>
+              <p className="font-bold text-[20px] font-mont">
+                {t("about.corehead5")}
+              </p>
             </div>
             <p className="font-normal mt-[10px] h-[110px] text-center text-[#555555] text-[15px] font-mont">
-              Encouraging member participation in decision making processes.
+              {t("about.corecontent5")}
             </p>
           </div>
         </div>
@@ -234,14 +240,10 @@ const Aboutus = () => {
       >
         <div className="w-[90%] h-[auto] flex justify-center items-center flex-col lg:h-screen">
           <h1 className="h-[20vh] text-[23px] lg:text-[30px] font-semibold font-mont text-[#fff] flex justify-center items-center text-center">
-            Join Genossenschaft GASI Today!
+          {t("about.join")}
           </h1>
           <p className="text-[16px] font-normal font-mont text-[#fff] text-center">
-            Looking for affordable cooperative housing in Zurich? We offer more
-            than just a place to live. Join our growing community and enjoy
-            lower rents, community-driven living, and sustainable housing
-            options. Get started today and secure your affordable home in
-            Zurich!
+          {t("about.content")}
           </p>
           <div className="w-[100%] lg:w-[50%] bg-white p-10 rounded justify-between mt-10">
             <div className="w-[100%]">
@@ -256,7 +258,7 @@ const Aboutus = () => {
             </div>
             <div className="w-full">
               <div className="py-2 px-3 rounded text-center cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont">
-                Submit
+              {t("home.submitbtn")}
               </div>
             </div>
           </div>

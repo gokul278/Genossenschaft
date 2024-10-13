@@ -1,1 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Table styling */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Montserrat", sans-serif;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #555555;
+}
+
+/* Center the download icons */
+.custom-table td i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Header and hover effects */
+.custom-table thead {
+  background-color: #000; /* Main color */
+  color: white;
+  font-weight: bold;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #fafafa; /* Hover background color */
+  color: #000; /* Hover text color */
+}

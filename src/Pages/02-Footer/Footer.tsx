@@ -1,11 +1,13 @@
 import "./Footer.css";
 import logo from "../../assets/Img/Logo/LOGO.png";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation("global");
   const navigate = useNavigate();
   return (
-    <div className="w-full py-5 bg-white flex justify-center items-center">
+    <div className="w-full bg-white flex flex-col justify-center items-center">
       <div className="w-[95%] flex justify-center bg-[#fafafa] rounded-[10px]">
         <div className="w-[80%] py-10 flex flex-col lg:flex-row justify-between">
           <div className="w-[100%] lg:w-[35%]">
@@ -13,16 +15,15 @@ const Footer = () => {
               <img src={logo} className="h-[80px]" alt="logo" />
             </div>
             <p className="text-justify mt-10 text-[16px] text-[#555555] font-normal font-mont">
-              Creating Sustainable, Inclusive, and Affordable Homes for a Better
-              Tomorrow. Our Cooperative living offers a unique blend of living
-              with modern design and social vision for a future that will be
-              better for everyone.
+              {t("footer.content")}
             </p>
           </div>
 
           <div className="w-[100%] mt-10 lg:mt-0 lg:w-[25%]">
             <div className="h-[60px]">
-              <h1 className="text-[20px] font-bold font-mont">Contact Us</h1>
+              <h1 className="text-[20px] font-bold font-mont">
+                {t("footer.quick")}
+              </h1>
             </div>
             <div className="w-full flex justify-start cursor-pointer pb-5">
               <div className="w-[15%] flex justify-start items-center">
@@ -71,7 +72,7 @@ const Footer = () => {
           <div className="w-[100%] mt-10 lg:mt-0 lg:w-[25%]">
             <div className="h-[60px]">
               <h1 className="text-[20px] font-bold font-mont text-[#00000]">
-                Quick Links
+                {t("footer.contact")}
               </h1>
             </div>
             <div className="w-full flex justify-end cursor-pointer pb-2">
@@ -85,7 +86,7 @@ const Footer = () => {
                     navigate("/");
                   }}
                 >
-                  Home
+                  {t("header.home")}
                 </div>
               </div>
             </div>
@@ -100,7 +101,7 @@ const Footer = () => {
                     navigate("/about");
                   }}
                 >
-                  About Us
+                  {t("header.about")}
                 </div>
               </div>
             </div>
@@ -115,7 +116,7 @@ const Footer = () => {
                     navigate("/regulations");
                   }}
                 >
-                  Regulations & Documents
+                  {t("header.regulations")}
                 </div>
               </div>
             </div>
@@ -130,7 +131,7 @@ const Footer = () => {
                     navigate("/report");
                   }}
                 >
-                  Annual report
+                  {t("header.report")}
                 </div>
               </div>
             </div>
@@ -145,7 +146,7 @@ const Footer = () => {
                     navigate("/applicationform");
                   }}
                 >
-                  Application form
+                  {t("header.form")}
                 </div>
               </div>
             </div>
@@ -160,7 +161,7 @@ const Footer = () => {
                     navigate("/units");
                   }}
                 >
-                  Units
+                  {t("header.units")}
                 </div>
               </div>
             </div>
@@ -169,14 +170,23 @@ const Footer = () => {
                 <i className="text-[#555555] mb-2 fa-solid fa-angle-right"></i>
               </div>
               <div className="w-[90%]">
-                <div className="font-normal font-mont text-[15px] text-[#555555] underline-animation"  onClick={() => {
+                <div
+                  className="font-normal font-mont text-[15px] text-[#555555] underline-animation"
+                  onClick={() => {
                     navigate("/pictures");
-                  }}>
-                  Picture Gallery
+                  }}
+                >
+                  {t("header.gallery")}
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="w-[100%] mt-5 ">
+        <hr />
+        <div className="py-3 text-center font-mont font-bold">
+          © {new Date().getFullYear()} Gasi Cooperative
         </div>
       </div>
     </div>

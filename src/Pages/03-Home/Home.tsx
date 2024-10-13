@@ -11,8 +11,12 @@ import WhyCard from "../../Components/WhyCard/WhyCard";
 import Slider from "../../Components/Home-Slider/Slider";
 import TextInput from "../../Components/Inputs/TextInput";
 import TextareaInput from "../../Components/Inputs/TextareaInput";
+import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation("global");
+  const navigate = useNavigate();
   return (
     <div className="w-full flex flex-col justify-center items-center bg-[#fff]">
       <div className="w-[95%] h-screen flex justify-center">
@@ -30,17 +34,14 @@ const Home = () => {
               className="text-[25px] lg:text-[45px] font-mont text-center text-white font-bold"
               data-aos="fade-up"
             >
-              Welcome to Genossenschaft GASI <br />
-              Your sustainable cooperative housing in Zurich
+              {t("home.heading1")} <br />
+              {t("home.heading2")}
             </h1>
             <p
               className="w-[100%] lg:w-[90%] text-[17px] lg:text-[25px] font-mont py-5 text-center text-white font-normal"
               data-aos="fade-up"
             >
-              Experience the comfort of cooperative living in a vibrant,
-              sustainable, and inclusive environment. At Genossenschaft GASI, we
-              believe in creating a property that fosters a strong sense of
-              belonging and shared values.
+              {t("home.content1")}
             </p>
           </div>
         </div>
@@ -72,21 +73,13 @@ const Home = () => {
               data-aos="fade-right"
             >
               <h1 className="text-[25px] font-semibold font-mont">
-                A{" "}
-                <span className="font-bold">
-                  Cooperative Housing Experience
-                </span>
+                {t("home.mainhead1")}{" "}
+                <span className="font-bold">{t("home.mainhead2")}</span>
                 <div className="hidden lg:block"></div>
-                Like No Other{" "}
+                {t("home.mainhead3")}{" "}
               </h1>
               <p className="mt-3 text-[16px] font-normal font-mont text-justify">
-                More than just a housing cooperative-Genossenschaft GASI is an
-                active community striving for sustainability thereby building
-                close connections between people. Our Cooperative living offers
-                a unique blend of living with modern design and social vision
-                for a future that will be better for everyone. From a peaceful
-                retreat to a vibrant social atmosphere, you're welcome to our
-                experience the ambience of living.{" "}
+                {t("home.mainheadcontent")}
               </p>
             </div>
           </div>
@@ -94,7 +87,9 @@ const Home = () => {
 
         <div className="w-[95%] flex flex-col  items-center justify-center py-20">
           <div className="w-[90%]">
-            <h1 className="text-[40px] font-mont font-bold">Key Features</h1>
+            <h1 className="text-[40px] font-mont font-bold">
+              {t("home.keyhead")}
+            </h1>
           </div>
           <div className="w-[90%] flex flex-wrap gap-x-10 justify-center items-center">
             <div
@@ -104,13 +99,10 @@ const Home = () => {
             >
               <img className="w-[80px] h-[80px]" src={logo1} alt="logo1" />
               <h1 className="text-[22px] h-[60px] flex justify-start items-center font-mont font-bold mt-3">
-                Eco-Friendly Living
+                {t("home.keyhead1")}
               </h1>
               <p className="w-[100%] lg:w-[90%] text-[16px] mt-3 text-[#555555] font-normal text-justify">
-                Sustainability is the word that we keep emphasizing in all that
-                we do. From energy-efficient building materials to eco-friendly
-                appliances, our goal is to minimize our impact on the
-                environment.{" "}
+                {t("home.keycontent1")}
               </p>
             </div>
 
@@ -121,13 +113,10 @@ const Home = () => {
             >
               <img className="w-[80px] h-[80px]" src={logo2} alt="logo1" />
               <h1 className="text-[22px] h-[60px] flex justify-start items-center font-mont font-bold mt-3">
-                Affordable Housing
+                {t("home.keyhead2")}
               </h1>
               <p className="w-[100%] lg:w-[90%] text-[16px] mt-3 text-[#555555] font-normal text-justify">
-                Relish having the space of living without digging a hole in your
-                pocket. Our units are competitively priced to ensure
-                accessibility for all, which promotes diversity in our
-                communities.
+                {t("home.keycontent2")}
               </p>
             </div>
 
@@ -138,19 +127,26 @@ const Home = () => {
             >
               <img className="w-[80px] h-[80px]" src={logo3} alt="logo1" />
               <h1 className="text-[22px] h-[60px] flex justify-center items-center font-mont font-bold mt-3">
-                Community Development
+                {t("home.keyhead3")}
               </h1>
               <p className="w-[100%] lg:w-[90%] text-[16px] mt-3 text-[#555555] font-normal text-justify">
-                We foster collaborative innovation, creating a welcoming space
-                where neighbors connect, and shared experiences thrive. Through
-                community events, we strengthen bonds and enhance our lives.
+                {t("home.keycontent3")}
               </p>
             </div>
           </div>
 
           <div className="w-full flex justify-center">
-            <div className="w-[200px] h-[60px] flex justify-center items-center rounded cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont">
-              Join Us Today !
+            <div
+              className={`${
+                t("header.home") === "Home"
+                  ? "w-[200px] h-[60px]"
+                  : "w-[250px] h-[80px]"
+              } flex justify-center items-center text-center rounded cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont`}
+              onClick={() => {
+                navigate("/address");
+              }}
+            >
+              {t("home.join")}
             </div>
           </div>
         </div>
@@ -165,20 +161,20 @@ const Home = () => {
         >
           <div className="w-[90%] h-[auto] lg:h-screen">
             <h1 className="h-[20vh] text-[23px] lg:text-[30px] font-semibold font-mont text-[#fff] flex justify-center items-center">
-              Why Choose Genossenschaft GASI?{" "}
+              {t("home.whyquestion")}
             </h1>
             <div className="w-[w-full] h-[auto] lg:h-[80vh] justify-center items-center gap-x-10 gap-y-10 flex flex-wrap">
               <WhyCard
-                head="Affordable Living in Switzerland's Competitive Housing Market"
-                content="Housing in Switzerland, especially cities like Zurich, is scarce and expensive. The cooperative housing model, on the other hand, allows for a non-profit, low-priced offering of housing. Genossenschaft GASI makes sure the rents they pay are significantly lower compared to what private landlords or companies offer, saving at a considerably competitive level."
+                head={t("home.whyhead1")}
+                content={t("home.whycontent1")}
               />
               <WhyCard
-                head="A Community Experience Unlike Any Other"
-                content="Apart from economic advantages, shared dwelling has social benefits relating to connectivity within community. The occupants are involved in decision-making and enjoy a lively, warm space which fosters interaction and mutual assistance. "
+                head={t("home.whyhead2")}
+                content={t("home.whycontent2")}
               />
               <WhyCard
-                head="Stress-Free housing process"
-                content="At Genossenschaft GASI, we make finding a home stress-free. Our cooperative housing offers lower prices than private rentals, with a community-driven approach that provides more than just affordable living—peace of mind and a welcoming environment. Enjoy simple access to quality housing without endless searches."
+                head={t("home.whyhead3")}
+                content={t("home.whycontent3")}
               />
             </div>
           </div>
@@ -189,11 +185,11 @@ const Home = () => {
             <div className="w-[90%] lg:w-[90%]">
               <div className="flex w-full justify-between mb-10">
                 <h1 className="text-[40px] font-mont font-bold">
-                  View Our Properties
+                  {t("home.viewhead")}
                 </h1>
                 <div className="text-[18px] justify-center items-center flex font-mont font-bold">
                   <div className="py-2 px-3 rounded text-center cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont">
-                    View All
+                    {t("home.viewbtn")}
                   </div>
                 </div>
               </div>
@@ -218,12 +214,10 @@ const Home = () => {
         >
           <div className="w-[90%] h-[auto] flex justify-center items-center flex-col lg:h-screen">
             <h1 className="h-[20vh] text-[23px] lg:text-[30px] font-semibold font-mont text-[#fff] flex justify-center items-center">
-              Let's Connect
+              {t("home.lets")}
             </h1>
             <p className="text-[16px] font-normal font-mont text-[#fff] text-center">
-              Hundreds of people have found affordable housing through our
-              service. Let us connect to help you find a cooperative apartment
-              where you will realize savings and the strength of community bond.{" "}
+              {t("home.letscontent")}
             </p>
             <div className="w-[100%] lg:w-[50%] bg-white p-10 rounded justify-between mt-10">
               <div className="w-[100%]">
@@ -238,7 +232,7 @@ const Home = () => {
               </div>
               <div className="w-full">
                 <div className="py-2 px-3 rounded text-center cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont">
-                  Submit
+                  {t("home.submitbtn")}
                 </div>
               </div>
             </div>

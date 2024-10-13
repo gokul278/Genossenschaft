@@ -1,0 +1,159 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "board": "Board",
+    "chart": "Organization Chart",
+    "address": "Address",
+    "regulations": "Regulations & Documents",
+    "report": "Annual Report",
+    "form": "Applicaton Form",
+    "units": "Units",
+    "gallery": "Picture Gallery",
+    "settlement": "Settlement",
+    "archive": "Archive"
+  },
+  "footer": {
+    "content": "Creating Sustainable, Inclusive, and Affordable Homes for a Better Tomorrow. Our Cooperative living offers a unique blend of living with modern design and social vision for a future that will be better for everyone.",
+    "quick": "Quick Links",
+    "contact": "Contact Us"
+  },
+  "home": {
+    "heading1": "Welcome to Genossenschaft GASI",
+    "heading2": "Your sustainable cooperative housing in Zurich",
+    "content1": "Experience the comfort of cooperative living in a vibrant, sustainable, and inclusive environment. At Genossenschaft GASI, we believe in creating a property that fosters a strong sense of belonging and shared values.",
+    "mainhead1": "A",
+    "mainhead2": "Cooperative Housing Experience",
+    "mainhead3": "Like No Other",
+    "mainheadcontent": "More than just a housing cooperative-Genossenschaft GASI is an active community striving for sustainability thereby building close connections between people. Our Cooperative living offers a unique blend of living with modern design and social vision for a future that will be better for everyone. From a peaceful retreat to a vibrant social atmosphere, you're welcome to our experience the ambience of living.",
+    "keyhead": "Key Features",
+    "keyhead1": "Eco-Friendly Living",
+    "keycontent1": "Sustainability is the word that we keep emphasizing in all that we do. From energy-efficient building materials to eco-friendly appliances, our goal is to minimize our impact on the environment.",
+    "keyhead2": "Affordable Housing",
+    "keycontent2": "Relish having the space of living without digging a hole in your pocket. Our units are competitively priced to ensure accessibility for all, which promotes diversity in our communities.",
+    "keyhead3": "Community Development",
+    "keycontent3": "We foster collaborative innovation, creating a welcoming space where neighbors connect, and shared experiences thrive. Through community events, we strengthen bonds and enhance our lives.",
+    "join": "Join Us Today!",
+    "whyquestion": "Why Choose Genossenschaft GASI?",
+    "whyhead1": "Affordable Living in Switzerland's Competitive Housing Market",
+    "whycontent1": "Housing in Switzerland, especially cities like Zurich, is scarce and expensive. The cooperative housing model, on the other hand, allows for a non-profit, low-priced offering of housing. Genossenschaft GASI makes sure the rents they pay are significantly lower compared to what private landlords or companies offer, saving at a considerably competitive level.",
+    "whyhead2": "A Community Experience Unlike Any Other",
+    "whycontent2": "Apart from economic advantages, shared dwelling has social benefits relating to connectivity within community. The occupants are involved in decision-making and enjoy a lively, warm space which fosters interaction and mutual assistance.",
+    "whyhead3": "Stress-Free housing process",
+    "whycontent3": "At Genossenschaft GASI, we make finding a home stress-free. Our cooperative housing offers lower prices than private rentals, with a community-driven approach that provides more than just affordable living—peace of mind and a welcoming environment. Enjoy simple access to quality housing without endless searches.",
+    "viewhead": "View Our Properties",
+    "viewbtn": "View All",
+    "lets": "Let's Connect",
+    "letscontent": "Hundreds of people have found affordable housing through our service. Let us connect to help you find a cooperative apartment where you will realize savings and the strength of community bond.",
+    "submitbtn": "Submit"
+  },
+  "about": {
+    "content1": "At Genossenschaft GASI, we curate affordable cooperative housing in Zurich to power a supportive and sustainable community for all. Founded with a mission to meet the housing needs of many, we have grown to become a model cooperative, blending affordability with an energetic sense of community. We've grown over the years and shaped ourselves to ensure our members enjoy high-quality living spaces minus the hefty price tag prices of the private rental market.",
+    "content2": "We pride ourselves on delivering housing units at lower rents that enable members to have comfort and convenience of a well-connected, comfortable, and environmentally friendly environment.",
+    "historyhead": "History",
+    "historycontent": "The Coal gas plant of Zurich, Schlieren started operations in 1898 including a key infrastructure like the gasometer and workers’ housing estate associated with it, to maintain readily available workforce. The plant was closed in 1974 when natural gas was introduced in Switzerland. Some buildings were demolished, rented and sold out. In 1984, the Zurich Gas Supply Company (GVZ) suggested turning the housing estate into a cooperative, a concept that was well-received by the residents. On May 24 1984, the Genossenschaft GASI came to life symbolized by the water tower in its logo. The cooperative remains committed to providing affordable housing and preserving its industrial heritage.",
+    "our": "Out",
+    "vision": "Vision",
+    "mission": "Mission",
+    "visioncontent": "Our Vision at Genossenschaft GASI is to create a vital inclusive community offering affordable, high-quality cooperative housing to people from all walks of life. We aim to make cooperative housing a long-term solution for the housing problem in Zurich by emphasizing sustainability.",
+    "missioncontent": "Our mission is simple: to provide affordable, non-profit housing in Zurich that makes living as safe, comfortable, and environmentally conscious as possible. The operating principle of Genossenschaft GASI focuses on cooperation and shared responsibility so each member can feel comfortable and help develop the community.",
+    "core": "Core Values",
+    "corehead1": "Affordability",
+    "corehead2": "Community",
+    "corehead3": "Sustainability",
+    "corehead4": "Transparency",
+    "corehead5": "Collaboration",
+    "corecontent1": "Ensuring cost-effective housing solutions for all.",
+    "corecontent2": "Creating a Supportive, inclusive, and engaged neighbourhood.",
+    "corecontent3": "Commuting Environment-friendly practices and energy efficient homes.",
+    "corecontent4": "Operating with transparency and openness among all members.",
+    "corecontent5": "Encouraging member participation in decision making processes.",
+    "join": "Join Genossenschaft GASI Today!",
+    "content": "Looking for affordable cooperative housing in Zurich? We offer more than just a place to live. Join our growing community and enjoy lower rents, community-driven living, and sustainable housing options. Get started today and secure your affordable home in Zurich!"
+  },
+  "board": {
+    "content": "Our Board is dedicated to creating an environment that embraces cooperation, affordability, sustainability, and inclusiveness. All our efforts are focused on protecting the interests of our residents while maintaining respect for environmental, social, and economic values.",
+    "intro": "Introducing Board Members",
+    "head1": "Our Commitment to the Community",
+    "content1": "The Board actively engages with our members on the governance and management of the cooperative so that no one is left out in the workings of our cooperative. That is why we practice shared governance, and each member should play their role in any decisions that may concern our community.",
+    "presidium": "Presidium",
+    "protocol": "Protocol",
+    "finances": "Finances",
+    "assessor": "Assessor"
+  },
+  "chart": {
+    "content1": "Our organizational structure encourages sound decision-making and active participation of its members.",
+    "content2": "Here is the outline of the main roles and departments that are critical to our cooperative housing community:"
+  },
+  "address": {
+    "get": "Get in Touch",
+    "getcontent": "We're here to help you! If you have any questions concerning our housing units, joining, or future community events, please do not hesitate to reach out.",
+    "social": "Social Media",
+    "contactform": "Contact Form",
+    "ourlocation": "Our Location",
+    "sendbtn": "Send a Message"
+  },
+  "documents": {
+    "head": "Welcome to Our Resource Hub",
+    "content": "Explore our repository of documents, reports, and tools created to help our residents and prospective members. Transparency and accessibility are pivotal to us; everyone should be well-informed and empowered to live at their best in our communities.",
+    "docu&repo": "Documents & Reports",
+    "docucontent": "Here you will find a collection of currently valid documents from the Genossenschaft GASI for downloading and printing.",
+    "document": "Documents",
+    "bylaws": "Bylaws",
+    "chart": "Organization chart",
+    "rules": "House rules",
+    "regulations": "Regulations",
+    "annualreport": "Annual Report",
+    "annualreports": "Annual Reports"
+  },
+  "report": {
+    "content1": "Dear cooperative members, dear residents",
+    "content2": "I look back on a richly loaded and work-intensive year 2020. I summarise the most striking topics in this report.",
+    "historyhead": "Historical Preservation Cooperation",
+    "historycontent1": "A controversial topic that always leads to exciting discussions in the board.",
+    "historycontent2": "Facts:",
+    "histiropoint1": " For 20 years, we have been part of the Federal Inventory of Objects Worthy of Protection!",
+    "histiropoint2": "Changes to the buildings must be discussed with the monument protection authorities.",
+    "histiropoint3": "The monument protection department contributes 30% of the costs for the maintenance and servicing of the objects.",
+    "histiropoint4": "After my evaluations, I have come to the conclusion that the advantages of good cooperation with the monument protection outweigh the disadvantages.",
+    "nexthead": "Outlook for the next 20 years!",
+    "nextcontent1": "The houses are now over 120 years old, and maintenance and repairs are becoming more and more complex. It is only a matter of time before we are confronted with major renovation work.",
+    "nextpoint1": "Sewer and sewage pipes are in a condition that not only gives me sleepless nights.",
+    "nextpoint2": "Every year we are confronted with water pipe breaks in the houses and basements.",
+    "nextpoint3": "Although the electrical installations do not comply with the standards of 1901, they are already subject to the standards of 1957.",
+    "nextpoint4": "The district heating pipelines, which supply a large part of the Eastern Cooperative, are on the verge of collapse.",
+    "nextpoint5": "The autonomous heating systems used to heat the other houses have also reached the end of their service life at 20 years. In addition, there is increasing political – and ultimately legal pressure – to say goodbye to fossil energy sources.",
+    "nextpoint6": "These are all challenges for which solutions must be considered. The ideas range from letting them fall into disrepair to the total renovation of all buildings.",
+    "nextpoint7": "As a founding member and president, GASI is close to my heart. I will do everything I can to secure the long-term future of our cooperative. I look forward to",
+    "nextpoint8": "hearing your opinions and ideas.",
+    "whathead": "What else happened in 2020?",
+    "whatpoint1": "Despite a successful appeal, the canton relaunched the cantonal road project in December in an unchanged form. We would have to give up garden shares for the right-hand turn onto the Gasometer bridge. The city of Schlieren supports us in our concerns.",
+    "whatpoint2": "The outdoor renovation of Industriestrasse 9 has now been completed after the monument protection authorities imposed a construction freeze.",
+    "whatpoint3": "The replacement of the old garages with modern and larger garage boxes has been delayed once again. The city of Schlieren wanted to know whether the soil was contaminated with environmentally harmful material. Now that the result is available, we can expect the final building permit in September.",
+    "final1": "I would like to thank all my fellow board members for the support and work they have done for our community.",
+    "final2": "I am looking forward to meeting as many of you as possible at the AGM.",
+    "final3": "President of the GASI Cooperative"
+  },
+  "form":{
+    "content1":"The registration form can be downloaded here as a PDF file."
+  },
+  "units":{
+    "head":"Find Your Perfect Home at",
+    "content":"Discover a choice of residential units tailored to different needs and lifestyles. Our cooperative housing provides modern amenities, attractive architecture, and a strong sense of community.",
+    "available":"Available Units"
+  },
+  "gallery":{
+    "head1":"Gallery of Properties",
+    "content1":"Explore the vibrant communities and innovative housing solutions provided by Genossenschaft GASI. Our cooperative properties are designed to foster a sense of belonging, sustainability, and inclusivity. Discover the homes that make up our cooperative by exploring our galleries.",
+    "head2":"Explore Our Properties",
+    "content2":"We invite you to take a glance at our properties and witness the spirit of cooperative living. Whether you're interested in our current settlements or want to explore the history of our developments through the archives, the gallery offers a glimpse into the vibrant communities we’ve built."
+  },
+  "settlement":{
+    "content1":"Our Settlement section showcases current properties within our cooperative housing communities. Each property is thoughtfully designed to meet the needs of our residents, balancing modern living with sustainable practices. From green spaces to communal areas, our settlements foster a sense of community and well-being.",
+    "content2":"Click through the gallery to view images of our current settlements, highlighting the amenities, layouts, and communal spaces that define our cooperative housing."
+  },
+  "archive":{
+    "content1":"Our Archive section highlights past properties and/Archives that have played a role in shaping our cooperative’s history. These properties may no longer be available, but they remain an important part of our journey towards creating sustainable and affordable housing in Zurich.",
+    "content2":"Browse through our archives to get a sense of our cooperative’s evolution and the impact we’ve made on Zurich’s housing landscape."
+  }
+}

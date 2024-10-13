@@ -1,18 +1,29 @@
 import { useState } from "react";
-import de from "../../assets/Img/Language/de.svg";
+import de from "../../assets/Img/Language/DE/de.svg";
+import en from "../../assets/Img/Language/EN/en.svg";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/Img/Logo/LOGO.png";
+import { Loader } from "../../Components/Loader/Loader";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
   const navigate = useNavigate();
+
+  const { t, i18n } = useTranslation("global");
+
   const [menuStatus, setMenuStatus] = useState(false);
   const [menu, setMenu] = useState({
     about: false,
     pictures: false,
   });
 
+  const [langauge, setLanguage] = useState("en");
+
+  const [loaderstatus, setLoaderstatus] = useState(false);
+
   return (
     <>
+      {loaderstatus ? <Loader /> : null}
       <div className="w-full">
         <div
           className={`w-full flex ${
@@ -20,10 +31,10 @@ export default function Header() {
           } justify-center items-center h-[80px] bg-white`}
         >
           <div className="w-[100%] h-[10vh] lg:w-[95%] flex justify-evenly items-center">
-            <div className="w-[50%] lg:w-[15%] flex justify-start ">
-              <img src={logo} className="h-[100%]" alt="log" />
+            <div className="w-[50%] lg:w-[10%] flex justify-start ">
+              <img src={logo} className="h-[120%]" alt="log" />
             </div>
-            <div className="hidden lg:flex w-[80%] justify-center gap-x-9">
+            <div className="hidden lg:flex w-[85%] justify-center gap-x-8">
               <div
                 className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
                 onClick={() => {
@@ -31,7 +42,7 @@ export default function Header() {
                   navigate("/");
                 }}
               >
-                <span className="underline-animation">Home</span>
+                <span className="underline-animation">{t("header.home")}</span>
               </div>
               <div
                 className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold relative"
@@ -49,7 +60,8 @@ export default function Header() {
                   }}
                   className="underline-animation"
                 >
-                  About Us&nbsp;&nbsp;<i className="fa-solid fa-caret-down"></i>
+                  {t("header.about")}&nbsp;&nbsp;
+                  <i className="fa-solid fa-caret-down"></i>
                 </span>
                 {menu.about && (
                   <div
@@ -68,7 +80,7 @@ export default function Header() {
                         setMenu({ ...menu, about: false });
                       }}
                     >
-                      Board
+                      {t("header.board")}
                     </div>
                     <div
                       className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer"
@@ -77,7 +89,7 @@ export default function Header() {
                         setMenu({ ...menu, about: false });
                       }}
                     >
-                      Organization Chart
+                      {t("header.chart")}
                     </div>
                     <div
                       onClick={() => {
@@ -86,7 +98,7 @@ export default function Header() {
                       }}
                       className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer"
                     >
-                      Address
+                      {t("header.address")}
                     </div>
                   </div>
                 )}
@@ -98,7 +110,7 @@ export default function Header() {
                 }}
               >
                 <span className="underline-animation">
-                  Regulations & Documents
+                  {t("header.regulations")}
                 </span>
               </div>
               <div
@@ -107,7 +119,9 @@ export default function Header() {
                   navigate("/report");
                 }}
               >
-                <span className="underline-animation">Annual report</span>
+                <span className="underline-animation">
+                  {t("header.report")}
+                </span>
               </div>
               <div
                 className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
@@ -115,7 +129,7 @@ export default function Header() {
                   navigate("/applicationform");
                 }}
               >
-                <span className="underline-animation">Application form</span>
+                <span className="underline-animation">{t("header.form")}</span>
               </div>
               <div
                 className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold"
@@ -124,7 +138,7 @@ export default function Header() {
                   navigate("/units");
                 }}
               >
-                <span className="underline-animation">Units</span>
+                <span className="underline-animation">{t("header.units")}</span>
               </div>
               <div
                 className="text-[15px] py-10 cursor-pointer font-mont mt-2 font-semibold relative"
@@ -142,7 +156,7 @@ export default function Header() {
                   }}
                   className="underline-animation"
                 >
-                  Picture Gallery&nbsp;&nbsp;
+                  {t("header.gallery")}&nbsp;&nbsp;
                   <i className="fa-solid fa-caret-down"></i>
                 </span>
                 {menu.pictures && (
@@ -162,7 +176,7 @@ export default function Header() {
                         setMenu({ ...menu, pictures: false });
                       }}
                     >
-                      Settlement
+                      {t("header.settlement")}
                     </div>
                     <div
                       onClick={() => {
@@ -171,7 +185,7 @@ export default function Header() {
                       }}
                       className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer"
                     >
-                      Archive
+                      {t("header.archive")}
                     </div>
                   </div>
                 )}
@@ -217,7 +231,35 @@ export default function Header() {
               </div> */}
             </div>
             <div className="w-[10%] lg:w-[5%] flex justify-end">
-              <img src={de} alt="de" className="w-[30px] h-[30px]" />
+              {langauge === "de" ? (
+                <img
+                  src={de}
+                  alt="de"
+                  onClick={() => {
+                    i18n.changeLanguage("de");
+                    setLanguage("en");
+                    setLoaderstatus(true);
+                    setTimeout(() => {
+                      setLoaderstatus(false);
+                    }, 1000);
+                  }}
+                  className=" cursor-pointer w-[30px] h-[30px]"
+                />
+              ) : langauge === "en" ? (
+                <img
+                  src={en}
+                  alt="de"
+                  onClick={() => {
+                    i18n.changeLanguage("en");
+                    setLanguage("de");
+                    setLoaderstatus(true);
+                    setTimeout(() => {
+                      setLoaderstatus(false);
+                    }, 1000);
+                  }}
+                  className=" cursor-pointer w-[30px] h-[30px]"
+                />
+              ) : null}
             </div>
             <div className="w-[10%] flex lg:hidden justify-center items-center">
               <button
@@ -281,7 +323,7 @@ export default function Header() {
                   navigate("/");
                 }}
               >
-                Home
+                {t("header.home")}
               </div>
               <div
                 className="text-[15px] cursor-pointer font-mont font-semibold"
@@ -290,7 +332,8 @@ export default function Header() {
                   navigate("/about");
                 }}
               >
-                About Us&nbsp;&nbsp;<i className="fa-solid fa-caret-down"></i>
+                {t("header.about")}&nbsp;&nbsp;
+                <i className="fa-solid fa-caret-down"></i>
               </div>
               <div className="w-[90%] flex flex-col items-center justify-center">
                 <div
@@ -300,7 +343,7 @@ export default function Header() {
                   }}
                   className="w-[80%] text-[15px] flex justify-start cursor-pointer py-5 font-normal font-mont"
                 >
-                  Board
+                  {t("header.board")}
                 </div>
                 <div
                   onClick={() => {
@@ -309,7 +352,7 @@ export default function Header() {
                   }}
                   className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont"
                 >
-                  Organization chart
+                  {t("header.chart")}
                 </div>
                 <div
                   onClick={() => {
@@ -318,7 +361,7 @@ export default function Header() {
                   }}
                   className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont"
                 >
-                  Address
+                  {t("header.address")}
                 </div>
               </div>
               <div
@@ -328,7 +371,7 @@ export default function Header() {
                   navigate("/regulations");
                 }}
               >
-                Regulations & Documents
+                {t("header.regulations")}
               </div>
               <div
                 className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
@@ -337,7 +380,7 @@ export default function Header() {
                   navigate("/report");
                 }}
               >
-                Annual report
+                {t("header.reoprt")}
               </div>
               <div
                 className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
@@ -346,7 +389,7 @@ export default function Header() {
                   navigate("/applicationform");
                 }}
               >
-                Application form
+                {t("header.form")}
               </div>
               <div
                 className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"
@@ -355,7 +398,7 @@ export default function Header() {
                   navigate("/units");
                 }}
               >
-                Units
+                {t("header.units")}
               </div>
               <div
                 className="text-[15px] cursor-pointer font-mont font-semibold"
@@ -364,7 +407,7 @@ export default function Header() {
                   navigate("/pictures");
                 }}
               >
-                Picture Gallery&nbsp;&nbsp;
+                {t("header.gallery")}&nbsp;&nbsp;
                 <i className="fa-solid fa-caret-down"></i>
               </div>
               <div className="w-[90%] flex flex-col items-center justify-center">
@@ -375,7 +418,7 @@ export default function Header() {
                   }}
                   className="w-[80%] text-[15px] flex justify-start cursor-pointer py-5 font-normal font-mont"
                 >
-                  Settlement
+                  {t("header.settlement")}
                 </div>
                 <div
                   onClick={() => {
@@ -384,7 +427,7 @@ export default function Header() {
                   }}
                   className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont"
                 >
-                  Archive
+                  {t("header.archive")}
                 </div>
               </div>
             </div>
