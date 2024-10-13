@@ -123,9 +123,9 @@ const Units = () => {
         </p>
       </div>
 
-      <div className="w-[85%] mb-10">
+      <div className="w-[90%] lg:w-[85%] mb-10">
         <HeadingLabel label={t("units.available")} />
-        <div className="flex flex-wrap w-full mt-5 gap-x-20 gap-y-14">
+        <div className="flex flex-wrap justify-center items-center w-full mt-5 gap-x-20 gap-y-14">
           {PropertyData.map((element) => (
             <Properties
               name={element.name}

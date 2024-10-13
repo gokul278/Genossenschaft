@@ -146,7 +146,7 @@ const Report = () => {
           <p className="mt-5">{t("report.nextpoint6")}</p>
 
           <p className="mt-5">
-            {t("report.nextpoint7")}
+            {t("report.nextpoint7")}&nbsp;
             <span className="font-bold">{t("report.nextpoint8")}</span>
           </p>
         </div>

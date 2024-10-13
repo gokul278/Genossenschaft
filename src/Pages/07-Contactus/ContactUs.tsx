@@ -161,7 +161,7 @@ const ContactUs = () => {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe> */}
-            <h1 className="text-[40px] font-mont font-bold mb-10">
+            <h1 className="text-[20px] lg:text-[40px] font-mont font-bold mb-10">
               {t("address.ourlocation")}
             </h1>
             <iframe
