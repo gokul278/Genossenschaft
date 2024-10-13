@@ -87,7 +87,7 @@ const Home = () => {
 
         <div className="w-[95%] flex flex-col  items-center justify-center py-20">
           <div className="w-[90%]">
-            <h1 className="text-[40px] font-mont font-bold">
+            <h1 className="text-[25px] lg:text-[40px] font-mont font-bold">
               {t("home.keyhead")}
             </h1>
           </div>
@@ -184,7 +184,7 @@ const Home = () => {
           <div className="w-[100%] mt-5 bg-[#fff] flex justify-center items-center">
             <div className="w-[90%] lg:w-[90%]">
               <div className="flex w-full justify-between mb-10">
-                <h1 className="text-[40px] font-mont font-bold">
+                <h1 className="text-[20px] lg:text-[40px] font-mont font-bold">
                   {t("home.viewhead")}
                 </h1>
                 <div className="text-[18px] justify-center items-center flex font-mont font-bold">

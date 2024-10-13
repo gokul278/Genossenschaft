@@ -5,7 +5,7 @@ interface HeadingLabelProps {
 }
 
 const HeadingLabel: React.FC<HeadingLabelProps> = ({ label }) => {
-  return <h1 className="text-[40px] font-mont font-bold">{label}</h1>;
+  return <h1 className="text-[25px] lg:text-[40px] font-mont font-bold">{label}</h1>;
 };
 
 export default HeadingLabel;

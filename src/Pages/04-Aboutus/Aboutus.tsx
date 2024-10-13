@@ -110,7 +110,7 @@ const Aboutus = () => {
       </div>
 
       <div
-        className="w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around h-[450px] lg:h-[140px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full"
+        className={`w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around ${t("header.home") === "Home" ? "h-[450px]" : "h-[600px]"} lg:h-[140px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full`}
         data-aos="fade-up"
       >
         <div className="block lg:hidden">
@@ -118,7 +118,7 @@ const Aboutus = () => {
             {t("about.our")} <div>Vision</div>
           </div>
         </div>
-        <div className="w-[85%] lg:w-[80%] h-[230px] lg:h-[120px] text-justify lg:text-center font-mont flex justify-center items-center">
+        <div className="w-[85%] lg:w-[80%] h-[300px] lg:h-[120px] text-justify lg:text-center font-mont flex justify-center items-center">
           {t("about.visioncontent")}
         </div>
         <div className="hidden lg:block">
@@ -129,7 +129,7 @@ const Aboutus = () => {
       </div>
 
       <div
-        className="w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around h-[450px] lg:h-[140px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full rounded-l"
+        className={`w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around ${t("header.home") === "Home" ? "h-[450px]" : "h-[600px]"} lg:h-[140px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full`}
         data-aos="fade-up"
       >
         <div className="block lg:hidden">

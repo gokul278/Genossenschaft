@@ -380,7 +380,7 @@ export default function Header() {
                   navigate("/report");
                 }}
               >
-                {t("header.reoprt")}
+                {t("header.report")}
               </div>
               <div
                 className="text-[15px] cursor-pointer font-mont pb-5 font-semibold"

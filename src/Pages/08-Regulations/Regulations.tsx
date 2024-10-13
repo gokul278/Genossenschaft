@@ -89,7 +89,7 @@ const Regulations = () => {
         </p>
       </div>
 
-      <div className="w-[90%] lg:w-[85%] flex flex-col mb-10 lg:flex-row gap-y-10 justify-between">
+      <div className="w-[98%] lg:w-[85%] flex flex-col mb-10 lg:flex-row gap-y-10 justify-between">
         <div className="w-[100%] lg:w-[45%]">
           <table className="custom-table">
             <thead>

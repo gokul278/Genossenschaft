@@ -125,15 +125,15 @@ const SettlementGallery = () => {
           </div>
         </div>
 
-        <div className="w-[70%] mt-10 mb-5 text-justify font-mont font-normal text-[16px]">
+        <div className="w-[90%] lg:w-[70%] mt-10 mb-5 text-justify font-mont font-normal text-[16px]">
           {t("settlement.content1")}
         </div>
 
-        <div className="w-[70%] font-mont text-justify font-normal text-[16px]">
+        <div className="w-[90%] lg:w-[70%] font-mont text-justify font-normal text-[16px]">
           {t("settlement.content2")}
         </div>
 
-        <div className="w-[90%] lg:w-[73%] my-10 flex flex-wrap justify-start items-center gap-x-10 gap-y-10">
+        <div className="w-[90%] lg:w-[73%] my-10 flex flex-wrap justify-center items-center gap-x-10 gap-y-10">
           {imgData.map((element, index) => (
             <div
               className="w-[300px] h-[300px]"

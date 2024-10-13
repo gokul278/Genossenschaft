@@ -58,10 +58,10 @@ const ContactUs = () => {
 
       <div className="w-[95%] flex justify-center items-center">
         <div className="w-[90%] my-10">
-          <h1 className="text-[40px] font-mont font-bold">
+          <h1 className="text-[25px] lg:text-[40px] font-mont font-bold">
             {t("address.get")}
           </h1>
-          <p className="text-[#555555] font-normal text-justify">
+          <p className="text-[#555555] mt-4 font-normal text-justify">
             {t("address.getcontent")}
           </p>
         </div>
@@ -108,7 +108,7 @@ const ContactUs = () => {
       <div className="w-[95%] flex justify-center items-center my-10">
         <div className="w-[90%] my-5 flex flex-col lg:flex-row justify-between gap-y-10">
           <div className="w-[100%] lg:w-[49%]">
-            <h1 className="text-[40px] font-mont font-bold mb-10">
+            <h1 className="text-[25px] lg:text-[40px] font-mont font-bold mb-10">
               {t("address.contactform")}
             </h1>
             <div>
