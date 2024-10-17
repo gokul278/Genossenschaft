@@ -3,13 +3,13 @@ import { useState } from "react";
 // import en from "../../assets/Img/Language/EN/en.svg";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/Img/Logo/LOGO.jpg";
-import { Loader } from "../../Components/Loader/Loader";
+// import { Loader } from "../../Components/Loader/Loader";
 import { useTranslation } from "react-i18next";
 
 export default function Header() {
   const navigate = useNavigate();
 
-  const { t, i18n } = useTranslation("global");
+  const { t } = useTranslation("global");
 
   const [menuStatus, setMenuStatus] = useState(false);
   const [menu, setMenu] = useState({
@@ -17,13 +17,13 @@ export default function Header() {
     pictures: false,
   });
 
-  const [langauge, setLanguage] = useState("en");
+  // const [langauge, setLanguage] = useState("en");
 
-  const [loaderstatus, setLoaderstatus] = useState(false);
+  // const [loaderstatus, setLoaderstatus] = useState(false);
 
   return (
     <>
-      {loaderstatus ? <Loader /> : null}
+      {/* {loaderstatus ? <Loader /> : null} */}
       <div className="w-full">
         <div
           className={`w-full flex ${
