@@ -80,7 +80,7 @@ const PropertyModal: React.FC<PropertyModalProps> = ({ data, handleclose }) => {
               className="w-[90%] lg:w-[90%] h-[auto] lg:h-[70vh] object-contain"
               src={`${
                 import.meta.env.VITE_PUBLIC_URL
-              }assets/Img/Units/Properties/${modaldata.currentimg}`}
+              }${modaldata.currentimg}`}
               alt="img"
             />
             <div>
@@ -115,7 +115,7 @@ const PropertyModal: React.FC<PropertyModalProps> = ({ data, handleclose }) => {
                     className="w-[100px] h-[100px] rounded object-cover object-center shadow-lg cursor-pointer"
                     src={`${
                       import.meta.env.VITE_PUBLIC_URL
-                    }assets/Img/Units/Properties/${img}`}
+                    }${img}`}
                     onClick={() =>
                       setModalData((prevData) => ({
                         ...prevData,

@@ -28,7 +28,7 @@ const Properties: React.FC<PropertyProps> = ({
         style={{
           backgroundImage: `url(${
             import.meta.env.VITE_PUBLIC_URL
-          }assets/Img/Units/Properties/${thumbnail})`,
+          }${thumbnail})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
