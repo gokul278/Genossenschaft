@@ -6,7 +6,6 @@ import rulerimg from "../../assets/Img/Home/Icon/Ruler.svg";
 // Define the props interface
 interface PropertyProps {
   name: string;
-  price: string;
   imgs: string[];
   type: string;
   thumbnail: string;
@@ -17,7 +16,6 @@ interface PropertyProps {
 // Reusable Properties component
 const Properties: React.FC<PropertyProps> = ({
   name,
-  price,
   thumbnail,
   type,
   bed,

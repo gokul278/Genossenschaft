@@ -171,7 +171,6 @@ const Units = () => {
               >
                 <Properties
                   name={element.name}
-                  price={element.price}
                   thumbnail={element.thumbnail}
                   imgs={element.imgs}
                   type={element.type}
