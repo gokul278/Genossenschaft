@@ -16,7 +16,7 @@ const TextareaInput: React.FC<TextareaInputProps> = ({
   id = "id-l02",
   name = "textarea-name",
   placeholder = "Write your message",
-  label = "Write your message",
+  label = "",
   rows = 2,
   //   value = "",
   //   onChange = () => {},
@@ -29,7 +29,7 @@ const TextareaInput: React.FC<TextareaInputProps> = ({
   //   };
 
   return (
-    <div className="relative my-6">
+    <div className="relative w-full">
       <textarea
         id={id}
         name={name}

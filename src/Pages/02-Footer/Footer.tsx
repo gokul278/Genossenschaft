@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo from "../../assets/Img/Logo/LOGO.png";
+import logo from "../../assets/Img/Logo/LOGO.jpg";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

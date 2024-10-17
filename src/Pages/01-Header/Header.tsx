@@ -1,8 +1,8 @@
 import { useState } from "react";
-import de from "../../assets/Img/Language/DE/de.svg";
-import en from "../../assets/Img/Language/EN/en.svg";
+// import de from "../../assets/Img/Language/DE/de.svg";
+// import en from "../../assets/Img/Language/EN/en.svg";
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/Img/Logo/LOGO.png";
+import logo from "../../assets/Img/Logo/LOGO.jpg";
 import { Loader } from "../../Components/Loader/Loader";
 import { useTranslation } from "react-i18next";
 
@@ -31,8 +31,8 @@ export default function Header() {
           } justify-center items-center h-[80px] bg-white`}
         >
           <div className="w-[100%] h-[10vh] lg:w-[95%] flex justify-evenly items-center">
-            <div className="w-[50%] lg:w-[10%] flex justify-start ">
-              <img src={logo} className="h-[120%]" alt="log" />
+            <div className="w-[50%] lg:w-[15%] flex justify-start ">
+              <img src={logo} className="w-[100%] " alt="log" />
             </div>
             <div className="hidden lg:flex w-[85%] justify-center gap-x-8">
               <div
@@ -93,7 +93,7 @@ export default function Header() {
                     </div>
                     <div
                       onClick={() => {
-                        navigate("/address");
+                        navigate("/membershipform");
                         setMenu({ ...menu, about: false });
                       }}
                       className="hover:bg-[#e6eaf8] rounded p-2 cursor-pointer"
@@ -230,7 +230,7 @@ export default function Header() {
                 )}
               </div> */}
             </div>
-            <div className="w-[10%] lg:w-[5%] flex justify-end">
+            {/* <div className="w-[10%] lg:w-[5%] flex justify-end">
               {langauge === "de" ? (
                 <img
                   src={de}
@@ -260,7 +260,7 @@ export default function Header() {
                   className=" cursor-pointer w-[30px] h-[30px]"
                 />
               ) : null}
-            </div>
+            </div> */}
             <div className="w-[10%] flex lg:hidden justify-center items-center">
               <button
                 className={`relative order-10 block self-center lg:hidden ${
@@ -357,7 +357,7 @@ export default function Header() {
                 <div
                   onClick={() => {
                     setMenuStatus(false);
-                    navigate("/address");
+                    navigate("/membershipform");
                   }}
                   className="w-[80%] text-[15px] flex justify-start cursor-pointer pb-5 font-normal font-mont"
                 >

@@ -28,7 +28,7 @@ function App() {
             <Route element={<Aboutus />} path="/about" />
             <Route element={<Board />} path="/board" />
             <Route element={<OrganizationChart />} path="/chart" />
-            <Route element={<ContactUs />} path="/address" />
+            <Route element={<ContactUs />} path="/membershipform" />
             <Route element={<Regulations />} path="/regulations" />
             <Route element={<Report />} path="/report" />
             <Route element={<ApplicationForm />} path="/applicationform" />

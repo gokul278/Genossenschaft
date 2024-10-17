@@ -4,24 +4,24 @@ import assets1 from "../../assets/Img/Home/01-ASSETS.png";
 import logo1 from "../../assets/Img/Home/Logo/01-HOME.svg";
 import logo2 from "../../assets/Img/Home/Logo/02-AFFORD.svg";
 import logo3 from "../../assets/Img/Home/Logo/03-COMMUNITY.svg";
-// import ReviewSlider from "../../Components/ReviewSlider/ReviewSlider";
 import bg3 from "../../assets/Img/Home/03-BG.png";
-import bg4 from "../../assets/Img/Home/04-BG.png";
-import WhyCard from "../../Components/WhyCard/WhyCard";
+// import bg4 from "../../assets/Img/Home/04-BG.png";
 import Slider from "../../Components/Home-Slider/Slider";
-import TextInput from "../../Components/Inputs/TextInput";
-import TextareaInput from "../../Components/Inputs/TextareaInput";
+// import TextInput from "../../Components/Inputs/TextInput";
+// import TextareaInput from "../../Components/Inputs/TextareaInput";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ReviewSlider from "../../Components/ReviewSlider/ReviewSlider";
 
 const Home = () => {
   const { t } = useTranslation("global");
   const navigate = useNavigate();
+
   return (
     <div className="w-full flex flex-col justify-center items-center bg-[#fff]">
-      <div className="w-[95%] h-screen flex justify-center">
+      <div className="w-[95%] h-[85vh] lg:h-[70vh] flex justify-center">
         <div
-          className="w-[100%] h-[100vh] flex flex-col justify-center items-center"
+          className="w-[100%] h-[85vh] lg:h-[70vh] flex flex-col justify-center items-center"
           style={{
             background: `url(${bg1})`,
             backgroundPosition: "center",
@@ -31,14 +31,14 @@ const Home = () => {
         >
           <div className="w-[90%] mt-[10vh] flex flex-col justify-center items-center">
             <h1
-              className="text-[25px] lg:text-[45px] font-mont text-center text-white font-bold"
+              className="text-[25px] lg:text-[30px] font-mont text-center text-white font-bold"
               data-aos="fade-up"
             >
               {t("home.heading1")} <br />
               {t("home.heading2")}
             </h1>
             <p
-              className="w-[100%] lg:w-[90%] text-[17px] lg:text-[25px] font-mont py-5 text-center text-white font-normal"
+              className="w-[100%] lg:w-[90%] text-[17px] lg:text-[20px] font-mont py-5 text-center text-white font-normal"
               data-aos="fade-up"
             >
               {t("home.content1")}
@@ -47,7 +47,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center mt-10 py-10">
+      <div className="w-full flex flex-col items-center justify-center pt-10">
         <div
           className="w-[95%] h-[auto] lg:h-[70vh] lg:bg-center flex justify-center items-center"
           style={{
@@ -85,13 +85,13 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-[95%] flex flex-col  items-center justify-center py-20">
+        <div className="w-[95%] flex flex-col  items-center justify-center py-5">
           <div className="w-[90%]">
             <h1 className="text-[25px] lg:text-[40px] font-mont font-bold">
               {t("home.keyhead")}
             </h1>
           </div>
-          <div className="w-[90%] flex flex-wrap gap-x-10 justify-center items-center">
+          <div className="w-[100%] flex flex-wrap gap-x-10 justify-center items-center">
             <div
               className="w-[300px] mt-10 lg:my-10 border-0 lg:border-r-2"
               data-aos="zoom-in"
@@ -152,31 +152,59 @@ const Home = () => {
         </div>
 
         <div
-          className="w-[95%] flex justify-center h-[auto] lg:h-screen bg-center pb-10"
+          className="w-[95%] flex justify-center h-[auto] lg:h-[auto] bg-center pb-10"
           style={{
             background: `url(${bg3})`,
             backgroundSize: "cover",
             borderRadius: "10px",
           }}
         >
-          <div className="w-[90%] h-[auto] lg:h-screen">
-            <h1 className="h-[20vh] text-[23px] lg:text-[30px] font-semibold font-mont text-[#fff] flex justify-center items-center">
+          <div className="w-[90%] h-[auto] flex-col flex justify-center items-center">
+            <h1 className="h-[15vh] text-[23px] lg:text-[30px] font-semibold font-mont text-[#fff] flex justify-center items-center">
               {t("home.whyquestion")}
             </h1>
-            <div className="w-[w-full] h-[auto] lg:h-[80vh] justify-center items-center gap-x-10 gap-y-10 flex flex-wrap">
+            <ReviewSlider />
+            <div className="w-full flex justify-center">
+              <div
+                className={`${
+                  t("header.home") === "Home"
+                    ? "w-[200px] h-[60px]"
+                    : "w-[250px] h-[80px]"
+                } flex justify-center items-center text-center rounded cursor-pointer bg-white text-[#000] text-[18px] transition-all duration-300 hover:bg-transparent hover:text-[#fff] border-2 border-[#fff] font-bold font-mont`}
+                onClick={() => {
+                  navigate("/address");
+                }}
+              >
+                {t("home.join")}
+              </div>
+            </div>
+            {/* <h1 className="h-[20vh] text-[23px] lg:text-[30px] font-semibold font-mont text-[#fff] flex justify-center items-center">
+              {t("home.whyquestion")}
+            </h1>
+            <div className="w-[100%] h-[auto] flex gap-x-10 overflow-y-auto">
+              <WhyCard
+                head={t("home.whyhead1")}
+                content={t("home.whycontent1")}
+              />
+
+              <WhyCard
+                head={t("home.whyhead1")}
+                content={t("home.whycontent1")}
+              />
+
               <WhyCard
                 head={t("home.whyhead1")}
                 content={t("home.whycontent1")}
               />
               <WhyCard
-                head={t("home.whyhead2")}
-                content={t("home.whycontent2")}
+                head={t("home.whyhead1")}
+                content={t("home.whycontent1")}
               />
               <WhyCard
-                head={t("home.whyhead3")}
-                content={t("home.whycontent3")}
+                head={t("home.whyhead1")}
+                content={t("home.whycontent1")}
               />
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -188,7 +216,12 @@ const Home = () => {
                   {t("home.viewhead")}
                 </h1>
                 <div className="text-[18px] justify-center items-center flex font-mont font-bold">
-                  <div className="py-2 px-3 rounded text-center cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont">
+                  <div
+                    className="py-2 px-3 rounded text-center cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont"
+                    onClick={() => {
+                      navigate("/units");
+                    }}
+                  >
                     {t("home.viewbtn")}
                   </div>
                 </div>
@@ -202,7 +235,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div
+        {/* <div
           className="w-[95%] mt-10 flex justify-center h-[auto] lg:h-screen pb-10"
           style={{
             background: `url(${bg4})`,
@@ -237,7 +270,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="w-[95%] pt-14 pb-10 flex justify-center items-center">
           <div className="w-[90%]">

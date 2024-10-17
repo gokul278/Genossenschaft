@@ -1,19 +1,36 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Glide from "@glidejs/glide";
-import sliderimg1 from "../../assets/Img/Home/SliderImg/sliderimg-1.jpg";
-import sliderimg2 from "../../assets/Img/Home/SliderImg/sliderimg-2.jpg";
-import sliderimg3 from "../../assets/Img/Home/SliderImg/sliderimg-3.jpg";
+// import sliderimg1 from "../../assets/Img/Home/SliderImg/sliderimg-1.jpg";
+// import sliderimg2 from "../../assets/Img/Home/SliderImg/sliderimg-2.jpg";
+// import sliderimg3 from "../../assets/Img/Home/SliderImg/sliderimg-3.jpg";
 import bed from "../../assets/Img/Home/Icon/Bed.svg";
-import bath from "../../assets/Img/Home/Icon/Bath.svg";
+// import bath from "../../assets/Img/Home/Icon/Bath.svg";
 import ruler from "../../assets/Img/Home/Icon/Ruler.svg";
+import PropertyModal from "../PropertyModal/PropertyModal";
+// import img1 from "../../assets/img/Units/Properties/01-IMG.png";
+// import img2 from "../../assets/img/Units/Properties/02-IMG.png";
+// import img3 from "../../assets/img/Units/Properties/03-IMG.png";
+// import img4 from "../../assets/img/Units/Properties/04-IMG.png";
+
+interface ModalData {
+  name: string;
+  price: string;
+  thumbnail: string;
+  imgs: any;
+  type: string;
+  bed: string;
+  ruler: string;
+}
 
 export default function Slider() {
   useEffect(() => {
     const slider = new Glide(".glide-04", {
       type: "carousel",
-      focusAt: "center",
+      startAt: 0,
       perView: 3,
       autoplay: 3500,
+      rewind: true,
+      rewindDuration: 3000,
       animationDuration: 700,
       gap: 24,
       breakpoints: {
@@ -25,55 +42,120 @@ export default function Slider() {
         },
       },
     }).mount();
-  
+
     return () => {
       slider.destroy();
     };
   }, []);
 
+  const [modalStatus, setModalStatus] = useState(false);
+
+  const [modaldata, setModaldata] = useState<ModalData | null>(null);
+
+  const handleclose = () => {
+    setModalStatus(false);
+    setModaldata(null);
+  };
+
   const sliderData = [
     {
-      name: " Modern luxury villa with 5 bedrooms close to the center of Ciudad Quesada",
+      name: "Wohneinheit mit 2 Mansarden",
       price: "15,000",
-      img: sliderimg1,
+      thumbnail: "01.jpeg",
+      imgs: ["01.jpeg", "02.jpeg"],
       type: "Apartment",
-      bed: "2",
-      bath: "2",
+      bed: "1",
       ruler: "16.33 m2",
     },
     {
-      name: "Sea View Duplex Penthouse",
+      name: "Wohneinheit mit 2½ Zimmer",
       price: "255,000",
-      img: sliderimg2,
+      thumbnail: "03.jpeg",
+      imgs: ["03.jpeg", "04.jpeg", "05.jpeg"],
       type: "Duplex Penthouse",
-      bed: "3",
-      bath: "2",
+      bed: "2",
       ruler: "164.35 m2",
     },
     {
-      name: " Luxury villa with 4 bedrooms, 3 bathrooms and 2 guest toilets",
+      name: "Wohneinheit mit 2 Zimmer + 2 Mansarden",
       price: "1,050,000",
-      img: sliderimg3,
+      thumbnail: "06.jpeg",
+      imgs: ["06.jpeg", "07.jpeg"],
       type: "Villa",
-      bed: "4",
-      bath: "3",
+      bed: "1",
       ruler: "288 m2",
     },
+    {
+      name: "Wohneinheit mit 3 Zimmer",
+      price: "1,050,000",
+      thumbnail: "08.jpeg",
+      imgs: ["08.jpeg", "09.jpeg", "10.jpeg", "11.jpeg"],
+      type: "Villa",
+      bed: "3",
+      ruler: "288 m2",
+    }
   ];
+
+  // const [modaldata, setModalData] = useState({
+  //   name: "Sea View Duplex Penthouse",
+  //   bed: "2",
+  //   ruler: "150.33 m2",
+  //   imgs: [img1, img2, img3, img4], // Your array of images
+  //   currentimg: img1, // Initialize with the first image
+  // });
+
+  // const handleNextImage = () => {
+  //   const currentIndex = modaldata.imgs.indexOf(modaldata.currentimg);
+  //   const nextIndex = (currentIndex + 1) % modaldata.imgs.length;
+  //   setModalData({
+  //     ...modaldata,
+  //     currentimg: modaldata.imgs[nextIndex],
+  //   });
+  // };
+
+  // const handlePrevImage = () => {
+  //   const currentIndex = modaldata.imgs.indexOf(modaldata.currentimg);
+  //   const prevIndex =
+  //     (currentIndex - 1 + modaldata.imgs.length) % modaldata.imgs.length; // Handle negative index
+  //   setModalData({
+  //     ...modaldata,
+  //     currentimg: modaldata.imgs[prevIndex],
+  //   });
+  // };
 
   return (
     <>
+      {modalStatus && modaldata && (
+        <PropertyModal data={[modaldata]} handleclose={handleclose} />
+      )}
+
       {/*<!-- Component: Carousel with controls outside --> */}
       <div className="glide-04 bg-[#fff] relative w-full">
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
             {sliderData.map((element) => (
-              <li className="w-[320px] cursor-pointer">
+              <li
+                className="w-[320px] cursor-pointer"
+                onClick={() => {
+                  setModalStatus(true);
+                  setModaldata({
+                    name: element.name,
+                    price: element.price,
+                    thumbnail: element.thumbnail,
+                    imgs: [element.imgs],
+                    type: element.type,
+                    bed: element.bed,
+                    ruler: element.ruler,
+                  });
+                }}
+              >
                 <div
                   className="w-[320px] lg:w-[320px] h-[250px]"
                   style={{
-                    backgroundImage: `url(${element.img})`,
+                    backgroundImage: `url(${
+                      import.meta.env.VITE_PUBLIC_URL
+                    }assets/Img/Units/Properties/${element.thumbnail})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundAttachment: "fixed",
@@ -82,9 +164,9 @@ export default function Slider() {
                   <div className="w-[100%] h-[250px] flex items-end relative group">
                     <div className="w-[100%] h-[250px] absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent hover:opacity-0 opacity-70 transition-opacity duration-300"></div>
                     <div className="w-[100%] text-[#fff] h-[40px] flex justify-center items-center z-10">
-                      <div className="w-[90%] flex justify-between">
+                      <div className="w-[90%] flex justify-end">
                         <div className="text-[18px] font-semibold">
-                          € {element.price}
+                          <i className="text-[16px] text-[#fff] fa-solid fa-expand"></i>
                         </div>
                         <div></div>
                       </div>
@@ -111,15 +193,13 @@ export default function Slider() {
                             alt="logo"
                           />
                           &nbsp;&nbsp;
-                          <div>{element.bed}</div>&nbsp;&nbsp;&nbsp;&nbsp;
-                          <img
+                          <div>{element.bed}</div>&nbsp;&nbsp;
+                          {/* <img
                             className="w-[22px] h-[22px]"
                             src={bath}
                             alt="logo"
-                          />
+                          /> */}
                           &nbsp;&nbsp;
-                          <div>{element.bath}</div>
-                          &nbsp;&nbsp;&nbsp;&nbsp;
                           <img
                             className="w-[22px] h-[22px]"
                             src={ruler}

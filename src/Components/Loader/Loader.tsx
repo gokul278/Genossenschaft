@@ -1,5 +1,5 @@
 import "./Loader.css";
-import logo from "../../assets/Img/Logo/LOGO.png";
+import logo from "../../assets/Img/Logo/LOGO.jpg";
 
 export const Loader = () => {
   return (

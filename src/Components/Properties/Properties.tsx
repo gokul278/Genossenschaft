@@ -1,16 +1,16 @@
 import React from "react";
 import bedimg from "../../assets/Img/Home/Icon/Bed.svg";
-import bathimg from "../../assets/Img/Home/Icon/Bath.svg";
+// import bathimg from "../../assets/Img/Home/Icon/Bath.svg";
 import rulerimg from "../../assets/Img/Home/Icon/Ruler.svg";
 
 // Define the props interface
 interface PropertyProps {
   name: string;
   price: string;
-  img: any;
+  imgs: string[];
   type: string;
+  thumbnail: string;
   bed: string;
-  bath: string;
   ruler: string;
 }
 
@@ -18,10 +18,9 @@ interface PropertyProps {
 const Properties: React.FC<PropertyProps> = ({
   name,
   price,
-  img,
+  thumbnail,
   type,
   bed,
-  bath,
   ruler,
 }) => {
   return (
@@ -29,7 +28,9 @@ const Properties: React.FC<PropertyProps> = ({
       <div
         className="w-[320px] lg:w-[320px] h-[250px]"
         style={{
-          backgroundImage: `url(${img})`,
+          backgroundImage: `url(${
+            import.meta.env.VITE_PUBLIC_URL
+          }assets/Img/Units/Properties/${thumbnail})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
@@ -38,8 +39,10 @@ const Properties: React.FC<PropertyProps> = ({
         <div className="w-[100%] h-[250px] flex items-end relative group">
           <div className="w-[100%] h-[250px] absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent hover:opacity-0 opacity-70 transition-opacity duration-300"></div>
           <div className="w-[100%] text-[#fff] h-[40px] flex justify-center items-center z-10">
-            <div className="w-[90%] flex justify-between">
-              <div className="text-[18px] font-semibold">€ {price}</div>
+            <div className="w-[90%] flex justify-end">
+              <div className="text-[18px] font-semibold">
+                <i className="text-[16px] text-[#fff] fa-solid fa-expand"></i>
+              </div>
               <div></div>
             </div>
           </div>
@@ -59,14 +62,22 @@ const Properties: React.FC<PropertyProps> = ({
           <div className="flex justify-between items-center">
             <div>
               <div className="flex">
-                <img className="w-[22px] h-[22px]" src={bedimg} alt="bed logo" />
+                <img
+                  className="w-[22px] h-[22px]"
+                  src={bedimg}
+                  alt="bed logo"
+                />
                 &nbsp;&nbsp;
                 <div>{bed}</div>&nbsp;&nbsp;&nbsp;&nbsp;
-                <img className="w-[22px] h-[22px]" src={bathimg} alt="bath logo" />
+                {/* <img className="w-[22px] h-[22px]" src={bathimg} alt="bath logo" />
                 &nbsp;&nbsp;
-                <div>{bath}</div>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <img className="w-[22px] h-[22px]" src={rulerimg} alt="ruler logo" />
+                <div>{bath}</div> */}
+                &nbsp;&nbsp;
+                <img
+                  className="w-[22px] h-[22px]"
+                  src={rulerimg}
+                  alt="ruler logo"
+                />
                 &nbsp;&nbsp;
                 <div>{ruler}</div>
               </div>

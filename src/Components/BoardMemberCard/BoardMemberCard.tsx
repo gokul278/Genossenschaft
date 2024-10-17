@@ -14,10 +14,12 @@ const BoardMemberCard: React.FC<BoardMemberProps> = ({
   phoneno,
 }) => {
   return (
-    <div>
-      <h2 className="text-[20px] font-bold font-mont pb-3">{position}</h2>
+    <div className="bg-[#f7f7f7] flex flex-col justify-center items-center px-10 py-3 rounded">
+      <h2 className="w-[100%] text-[20px] font-bold text-start font-mont pb-3">
+        {position}
+      </h2>
       <div
-        className="w-[250px] h-[300px] rounded"
+        className="w-[200px] h-[250px] rounded"
         style={{
           background: `url(${img})`,
           backgroundPosition: "center",
@@ -25,7 +27,9 @@ const BoardMemberCard: React.FC<BoardMemberProps> = ({
           backgroundRepeat: "no-repeat",
         }}
       ></div>
-      <p className="text-[16px] mt-3 font-nomal font-mont">{name}</p>
+      <p className="w-full text-start text-[16px] mt-3 font-nomal font-mont">
+        {name}
+      </p>
       {email.length > 0 ? (
         <p>
           <a
@@ -37,7 +41,7 @@ const BoardMemberCard: React.FC<BoardMemberProps> = ({
         </p>
       ) : null}
       {phoneno.length > 0 ? (
-        <p className="mt-1">
+        <p className="mt-1 w-full text-start">
           <a
             href={`tel:${phoneno}`}
             className="text-[16px] font-nomal font-mont"
@@ -46,7 +50,7 @@ const BoardMemberCard: React.FC<BoardMemberProps> = ({
           </a>
         </p>
       ) : null}
-      <div className="py-2 flex gap-x-3">
+      <div className="py-3 flex gap-x-3">
         <i className="text-[20px] cursor-pointer hover:text-[red] transition-all duration-200 fa-brands fa-facebook-f"></i>
         <i className="text-[22px] cursor-pointer hover:text-[red] transition-all duration-200 fa-brands fa-instagram"></i>
         <i className="text-[22px] cursor-pointer hover:text-[red] transition-all duration-200 fa-brands fa-x-twitter"></i>

@@ -65,7 +65,7 @@ const Board = () => {
 
       <div className="w-[85%] mb-10">
         <HeadingLabel label={t("board.intro")} />
-        <div className="flex mt-5 flex-wrap justify-center lg:justify-start gap-x-10 gap-y-10">
+        <div className="flex mt-5 flex-wrap justify-center lg:justify-center gap-x-10 gap-y-10">
           <BoardMemberCard
             img={member1}
             name="Freundlieb Danny"
@@ -77,8 +77,8 @@ const Board = () => {
             img={member2}
             name="Fijacko Diana"
             position={t("board.protocol")}
-            email=""
-            phoneno=""
+            email="danny@freundliebtennis.ch"
+            phoneno="076'390'14'13"
           />
           <BoardMemberCard
             img={member3}
@@ -91,15 +91,15 @@ const Board = () => {
             img={unknowfemale}
             name="Amore Ursula"
             position={t("board.assessor")}
-            email=""
-            phoneno=""
+            email="danny@freundliebtennis.ch"
+            phoneno="076'390'14'13"
           />
           <BoardMemberCard
             img={unknowfemale}
             name="Harbart Rebecca"
             position={t("board.assessor")}
-            email=""
-            phoneno=""
+            email="danny@freundliebtennis.ch"
+            phoneno="076'390'14'13s"
           />
         </div>
       </div>

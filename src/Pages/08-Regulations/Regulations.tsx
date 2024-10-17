@@ -106,7 +106,7 @@ const Regulations = () => {
                 <td>{t("documents.bylaws")}</td>
                 <td>06/2019</td>
                 <td>
-                  <a href={bylaws} download>
+                  <a href={bylaws} target="_blank">
                     <i className=" cursor-pointer fa-solid fa-download"></i>
                   </a>
                 </td>
@@ -115,7 +115,7 @@ const Regulations = () => {
                 <td>{t("documents.chart")}</td>
                 <td>06/2020</td>
                 <td>
-                  <a href={chart} download>
+                  <a href={chart} target="_blank">
                     <i className=" cursor-pointer fa-solid fa-download"></i>
                   </a>
                 </td>
@@ -124,7 +124,7 @@ const Regulations = () => {
                 <td>{t("documents.rules")}</td>
                 <td>04/2008</td>
                 <td>
-                  <a href={houserules} download>
+                  <a href={houserules} target="_blank">
                     <i className=" cursor-pointer fa-solid fa-download"></i>
                   </a>
                 </td>
@@ -133,7 +133,7 @@ const Regulations = () => {
                 <td>{t("documents.regulations")}</td>
                 <td>-/-</td>
                 <td>
-                  <a href={regulations} download>
+                  <a href={regulations} target="_blank">
                     <i className=" cursor-pointer fa-solid fa-download"></i>
                   </a>
                 </td>
@@ -157,7 +157,7 @@ const Regulations = () => {
                 <td>{t("documents.annualreports")} 2019</td>
                 <td>07/2020</td>
                 <td>
-                  <a href={annualreport2019} download>
+                  <a href={annualreport2019} target="_blank">
                     <i className=" cursor-pointer fa-solid fa-download"></i>
                   </a>
                 </td>
@@ -166,7 +166,7 @@ const Regulations = () => {
                 <td>{t("documents.annualreports")} 2018</td>
                 <td>07/2019</td>
                 <td>
-                  <a href={annualreport2018} download>
+                  <a href={annualreport2018} target="_blank">
                     <i className=" cursor-pointer fa-solid fa-download"></i>
                   </a>
                 </td>
@@ -175,7 +175,7 @@ const Regulations = () => {
                 <td>{t("documents.annualreports")} 2017</td>
                 <td>05/2018</td>
                 <td>
-                  <a href={annualreport2017} download>
+                  <a href={annualreport2017} target="_blank">
                     <i className=" cursor-pointer fa-solid fa-download"></i>
                   </a>
                 </td>
@@ -184,7 +184,7 @@ const Regulations = () => {
                 <td>{t("documents.annualreports")} 2016</td>
                 <td>05/2017</td>
                 <td>
-                  <a href={annualreport2016} download>
+                  <a href={annualreport2016} target="_blank">
                     <i className=" cursor-pointer fa-solid fa-download"></i>
                   </a>
                 </td>
@@ -193,7 +193,7 @@ const Regulations = () => {
                 <td>{t("documents.annualreports")} 2015</td>
                 <td>05/2016</td>
                 <td>
-                  <a href={annualreport2015} download>
+                  <a href={annualreport2015} target="_blank">
                     <i className=" cursor-pointer fa-solid fa-download"></i>
                   </a>
                 </td>
