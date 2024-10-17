@@ -155,7 +155,7 @@ export default function Slider() {
                   style={{
                     backgroundImage: `url(${
                       import.meta.env.VITE_PUBLIC_URL
-                    }assets/Img/Units/Properties/${element.thumbnail})`,
+                    }${element.thumbnail})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundAttachment: "fixed",
