@@ -50,12 +50,12 @@ const BoardMemberCard: React.FC<BoardMemberProps> = ({
           </a>
         </p>
       ) : null}
-      <div className="py-3 flex gap-x-3">
+      {/* <div className="py-3 flex gap-x-3">
         <i className="text-[20px] cursor-pointer hover:text-[red] transition-all duration-200 fa-brands fa-facebook-f"></i>
         <i className="text-[22px] cursor-pointer hover:text-[red] transition-all duration-200 fa-brands fa-instagram"></i>
         <i className="text-[22px] cursor-pointer hover:text-[red] transition-all duration-200 fa-brands fa-x-twitter"></i>
         <i className="text-[22px] cursor-pointer hover:text-[red] transition-all duration-200 fa-brands fa-linkedin-in"></i>
-      </div>
+      </div> */}
     </div>
   );
 };

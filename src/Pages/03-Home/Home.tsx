@@ -35,7 +35,7 @@ const Home = () => {
               data-aos="fade-up"
             >
               {t("home.heading1")} <br />
-              {t("home.heading2")}
+              {/* {t("home.heading2")} */}
             </h1>
             <p
               className="w-[100%] lg:w-[90%] text-[17px] lg:text-[20px] font-mont py-5 text-center text-white font-normal"
@@ -143,7 +143,7 @@ const Home = () => {
                   : "w-[250px] h-[80px]"
               } flex justify-center items-center text-center rounded cursor-pointer bg-[#000] text-[#fff] text-[18px] transition-all duration-300 hover:bg-[#fff] hover:text-[#000] border-2 border-[#000] font-bold font-mont`}
               onClick={() => {
-                navigate("/address");
+                navigate("/membershipform");
               }}
             >
               {t("home.join")}
@@ -172,7 +172,7 @@ const Home = () => {
                     : "w-[250px] h-[80px]"
                 } flex justify-center items-center text-center rounded cursor-pointer bg-white text-[#000] text-[18px] transition-all duration-300 hover:bg-transparent hover:text-[#fff] border-2 border-[#fff] font-bold font-mont`}
                 onClick={() => {
-                  navigate("/address");
+                  navigate("/membershipform");
                 }}
               >
                 {t("home.join")}

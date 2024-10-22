@@ -10,9 +10,9 @@ import img2 from "../../assets/Img/About/ICONS/COMMUNITY.svg";
 import img3 from "../../assets/Img/About/ICONS/SUSTAINABILITY.svg";
 import img4 from "../../assets/Img/About/ICONS/TRANSPARENCY.svg";
 import img5 from "../../assets/Img/About/ICONS/COLLABORATION.svg";
-import TextareaInput from "../../Components/Inputs/TextareaInput";
-import TextInput from "../../Components/Inputs/TextInput";
-import bg4 from "../../assets/Img/Home/04-BG.png";
+// import TextareaInput from "../../Components/Inputs/TextareaInput";
+// import TextInput from "../../Components/Inputs/TextInput";
+// import bg4 from "../../assets/Img/Home/04-BG.png";
 import { useTranslation } from "react-i18next";
 
 const Aboutus = () => {
@@ -110,7 +110,9 @@ const Aboutus = () => {
       </div>
 
       <div
-        className={`w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around ${t("header.home") === "Home" ? "h-[450px]" : "h-[600px]"} lg:h-[140px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full`}
+        className={`w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around ${
+          t("header.home") === "Home" ? "h-[450px]" : "h-[600px]"
+        } lg:h-[140px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full`}
         data-aos="fade-up"
       >
         <div className="block lg:hidden">
@@ -129,7 +131,9 @@ const Aboutus = () => {
       </div>
 
       <div
-        className={`w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around ${t("header.home") === "Home" ? "h-[450px]" : "h-[600px]"} lg:h-[140px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full`}
+        className={`w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-around ${
+          t("header.home") === "Home" ? "h-[450px]" : "h-[600px]"
+        } lg:h-[140px] my-10 bg-[#ffcc41] rounded lg:rounded-r-full`}
         data-aos="fade-up"
       >
         <div className="block lg:hidden">
@@ -147,7 +151,7 @@ const Aboutus = () => {
         </div>
       </div>
 
-      <div className="w-[90%] my-10">
+      <div className="w-[90%] my-10 pb-10">
         <HeadingLabel label={t("about.core")} />
         <div className="w-full mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-10">
           <div
@@ -228,7 +232,7 @@ const Aboutus = () => {
         </div>
       </div>
 
-      <div
+      {/* <div
         className="w-[95%] mt-10 flex justify-center h-[auto] lg:h-screen pb-10"
         style={{
           background: `url(${bg4})`,
@@ -263,7 +267,7 @@ const Aboutus = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

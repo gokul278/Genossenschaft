@@ -69,36 +69,36 @@ const Board = () => {
           <BoardMemberCard
             img={member1}
             name="Freundlieb Danny"
-            position={t("board.presidium")}
-            email="danny@freundliebtennis.ch"
+            position="Präsident"
+            email="info@genossenschaft-gasi.ch"
             phoneno="076'390'14'13"
           />
           <BoardMemberCard
             img={member2}
-            name="Fijacko Diana"
-            position={t("board.protocol")}
-            email="danny@freundliebtennis.ch"
+            name="Diana Fijacko"
+            position="Aktuarin"
+            email="info@genossenschaft-gasi.ch"
             phoneno="076'390'14'13"
           />
           <BoardMemberCard
             img={member3}
-            name="Stähli Maria-Helena"
-            position={t("board.assessor")}
-            email="mh_huebler@hotmail.com"
+            name="Negoslav Mihailovic"
+            position="Finanzen"
+            email="info@genossenschaft-gasi.ch"
             phoneno="044'480'24'5"
           />
           <BoardMemberCard
             img={unknowfemale}
-            name="Amore Ursula"
-            position={t("board.assessor")}
-            email="danny@freundliebtennis.ch"
+            name="Ursula Amore"
+            position="Beisitzerin"
+            email="info@genossenschaft-gasi.ch"
             phoneno="076'390'14'13"
           />
           <BoardMemberCard
             img={unknowfemale}
-            name="Harbart Rebecca"
-            position={t("board.assessor")}
-            email="danny@freundliebtennis.ch"
+            name="Rebecca Harbart"
+            position="Beisitzerin"
+            email="info@genossenschaft-gasi.ch"
             phoneno="076'390'14'13s"
           />
         </div>
