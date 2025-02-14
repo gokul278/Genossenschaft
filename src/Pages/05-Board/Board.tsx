@@ -81,7 +81,7 @@ const Board = () => {
             phoneno="076'390'14'13"
           />
           <BoardMemberCard
-            img={member3}
+            img={unknowfemale}
             name="Negoslav Mihailovic"
             position="Finanzen"
             email="info@genossenschaft-gasi.ch"
