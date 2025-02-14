@@ -4,7 +4,6 @@ import HeadingLabel from "../../Components/HeadingLabel/HeadingLabel";
 import BoardMemberCard from "../../Components/BoardMemberCard/BoardMemberCard";
 import member1 from "../../assets/Img/Board/MEMBERS/01-IMG.jpg";
 import member2 from "../../assets/Img/Board/MEMBERS/02-IMG.jpg";
-import member3 from "../../assets/Img/Board/MEMBERS/03-IMG.jpg";
 import unknowfemale from "../../assets/Img/Board/MEMBERS/UNKNOW-FEMALE.jpg";
 import bg2 from "../../assets/Img/Home/02-BG.png";
 import assets1 from "../../assets/Img/Board/01-ASSETS.png";
